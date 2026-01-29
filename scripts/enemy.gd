@@ -2,7 +2,9 @@ extends Node2D
 
 @export var health : int = 10
 @onready var area_2d: Area2D = $Area2D
-@onready var shots: Emitter = $Shots
+@export var shot_layer : Node2D
+
+
 var killed : bool = false
 
 
@@ -12,9 +14,13 @@ func _ready() -> void:
 	$Area2D.area_entered.connect(_on_area_entered)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func shoot(shot: PackedScene) -> void:
+	if killed:
+		return
+	var shotInstance : Node2D = shot.instantiate()
+	shotInstance.position = shot_layer.to_local(self.global_position)
+	shot_layer.add_child(shotInstance)
+	
 
 func _on_area_entered(area: Area2D) -> void:
 	if killed:
@@ -33,5 +39,4 @@ func _on_area_entered(area: Area2D) -> void:
 		#TODO: Spawn enemy death animation
 		health = 0
 		killed = true
-		shots.active = false
 		queue_free()
