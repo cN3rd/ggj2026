@@ -1,25 +1,24 @@
-extends Area2D
+extends Node2D
 
-#東能
+@export var health : int = 10
+@onready var area_2d: Area2D = $Area2D
+@onready var shots: Emitter = $Shots
+var killed : bool = false
 
-const SPEED = 1000
-@export var health : int = 100
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	area_entered.connect(_on_area_entered)
+	$Area2D.area_entered.connect(_on_area_entered)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-func _physics_process(delta: float) -> void:
-	var direction := Input.get_vector("left", "right", "up", "down")
-	position += direction * SPEED * delta
-
-
 func _on_area_entered(area: Area2D) -> void:
+	if killed:
+		return
 	var shot: Shot = area.get_parent() as Shot
 	if shot == null:
 		return
@@ -31,5 +30,8 @@ func _on_area_entered(area: Area2D) -> void:
 	if health > damage:
 		health -= damage
 	else:
+		#TODO: Spawn enemy death animation
 		health = 0
-		get_tree().reload_current_scene()
+		killed = true
+		shots.active = false
+		queue_free()

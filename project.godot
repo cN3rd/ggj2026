@@ -61,3 +61,8 @@ attack={
 "deadzone": 0.2,
 "events": []
 }
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemy"
