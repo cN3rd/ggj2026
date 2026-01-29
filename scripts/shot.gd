@@ -7,5 +7,8 @@ signal hit_player
 @export var damage : int = 1
 var already_hit : bool = false
 
+func _ready() -> void:
+	hit_player.connect(_on_hit_player)
+
 func _on_hit_player() -> void:
 	area_2d.queue_free()
