@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://biuja7qx0t6q0"]
+
+[ext_resource type="PackedScene" uid="uid://cjutvbdujaeol" path="res://shot.tscn" id="1_igr5w"]
+
+[sub_resource type="Animation" id="Animation_1bvp3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_h2yge"]
+resource_name = "shot_movement"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1000)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1bvp3"]
+_data = {
+&"RESET": SubResource("Animation_1bvp3"),
+&"shot_movement": SubResource("Animation_h2yge")
+}
+
+[node name="scrolling_shot" type="Node2D" unique_id=1341587783]
+
+[node name="Shot" parent="." unique_id=143353712 instance=ExtResource("1_igr5w")]
+position = Vector2(0, 1000)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948720595]
+libraries/ = SubResource("AnimationLibrary_1bvp3")
+autoplay = &"shot_movement"
