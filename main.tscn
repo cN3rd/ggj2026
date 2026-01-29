@@ -121,5 +121,3 @@ uv = PackedVector2Array(-282, -33, -209, 34, -153, -44)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=796814369]
 libraries/ = SubResource("AnimationLibrary_272bh")
 autoplay = &"level"
-
-[connection signal="area_entered" from="Player" to="Player" method="_on_area_entered"]
