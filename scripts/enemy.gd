@@ -2,7 +2,7 @@ extends Node2D
 
 @export var health : int = 10
 @onready var area_2d: Area2D = $Area2D
-@export var shot_layer : Node2D
+@export var explosion: PackedScene = null
 @export var shot: PackedScene
 @onready var aim: Node2D = $Aim
 
@@ -19,6 +19,7 @@ func _ready() -> void:
 func shoot() -> void:
 	if killed:
 		return
+	var shot_layer := get_tree().get_first_node_in_group('shot_layer') as Node2D
 	var shotInstance : Node2D = shot.instantiate()
 	shotInstance.position = shot_layer.to_local(self.global_position)
 	shotInstance.rotation = aim.rotation
@@ -43,7 +44,11 @@ func _on_area_entered(area: Area2D) -> void:
 	if health > damage:
 		health -= damage
 	else:
-		#TODO: Spawn enemy death animation
+		if explosion != null:
+			var explosion_layer := get_tree().get_first_node_in_group('explosion_layer') as Node2D
+			var explosionInstance : Node2D = explosion.instantiate()
+			explosionInstance.position = explosion_layer.to_local(self.global_position)
+			explosion_layer.add_child(explosionInstance)
 		health = 0
 		killed = true
 		queue_free()

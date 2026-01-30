@@ -27,6 +27,10 @@ window/size/window_width_override=800
 window/size/window_height_override=450
 window/stretch/mode="canvas_items"
 
+[editor]
+
+movie_writer/movie_file="C:/Users/SlugFiller Backtop/Documents/code/Godot/Projects/ggj2026_prelim.ogv"
+
 [input]
 
 up={

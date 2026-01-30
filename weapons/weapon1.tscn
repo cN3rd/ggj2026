@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bfwuy58ie633m"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_ky32p"]
+[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_dit84"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dit84"]
 radius = 20.0
@@ -60,6 +61,7 @@ _data = {
 
 [node name="Shot" type="Node2D" parent="." unique_id=477710227]
 script = ExtResource("1_ky32p")
+explosion = ExtResource("2_dit84")
 
 [node name="Area2D" type="Area2D" parent="Shot" unique_id=1188837913]
 collision_layer = 2

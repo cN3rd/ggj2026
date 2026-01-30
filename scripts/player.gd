@@ -10,8 +10,10 @@ const SPEED = 1000
 const MAX_HEALTH = 100
 const HEAL_MIN_TIME = 5.0
 const HEAL_REPEAT_TIME = 0.03
+const DEATH_TIME = 2.0
 @export var health : int = MAX_HEALTH
 @export var margin : float = 50
+@export var explosion: PackedScene = null
 var last_active_weapon : int = 0
 var heal_timer : float = 0
 
@@ -40,6 +42,8 @@ func _physics_process(delta: float) -> void:
 			health += 1
 
 func _on_area_entered(area: Area2D) -> void:
+	if health <= 0:
+		return
 	var shot: Shot = area.get_parent() as Shot
 	if shot == null:
 		return
@@ -52,11 +56,16 @@ func _on_area_entered(area: Area2D) -> void:
 		heal_timer = 0
 		health -= damage
 	else:
-		#TODO explosion animation
+		if explosion != null:
+			var explosion_layer := get_tree().get_first_node_in_group('explosion_layer') as Node2D
+			var explosionInstance : Node2D = explosion.instantiate()
+			explosionInstance.position = explosion_layer.to_local(self.global_position)
+			explosion_layer.add_child(explosionInstance)
 		health = 0
 		_set_active_weapon(-1)
-		#TODO delay until explosion animation finished
+		visible = false
 		#TODO game over screen
+		await get_tree().create_timer(DEATH_TIME).timeout
 		get_tree().call_deferred('reload_current_scene')
 
 func _set_active_weapon(which: int) -> void:

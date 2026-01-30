@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://cjutvbdujaeol"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_awion"]
+[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_3ldfn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
 radius = 50.0
 
 [node name="Shot" type="Node2D" unique_id=143353712]
 script = ExtResource("1_awion")
+explosion = ExtResource("2_3ldfn")
 damage = 10
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1833640360]

@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://c51cwqueyieuv" path="res://art/sliced_03.png" id="3_dg77c"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" path="res://weapons/weapon2.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon2.tscn" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dq5hirxu70phl" path="res://art/sliced_27.png" id="4_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="10_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
@@ -335,6 +336,7 @@ centered = false
 [node name="Player" type="Area2D" parent="." unique_id=523824402]
 position = Vector2(960, 980)
 script = ExtResource("1_ig7tw")
+explosion = ExtResource("10_ycdy4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Player" unique_id=2141385949]
 scale = Vector2(0.3, 0.3)
@@ -345,27 +347,22 @@ shape = SubResource("CircleShape2D_7dm0k")
 
 [node name="Weapons" type="Node2D" parent="Player" unique_id=1895541199]
 
-[node name="Weapon1" type="Node2D" parent="Player/Weapons" unique_id=571644371 node_paths=PackedStringArray("shot_layer")]
+[node name="Weapon1" type="Node2D" parent="Player/Weapons" unique_id=571644371]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("3_1bvp3")
 shot_time = 0.6
-shot_layer = NodePath("../../../shot_layer")
 
-[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=1473051817 node_paths=PackedStringArray("shot_layer")]
+[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=1473051817]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("4_7mycd")
 shot_time = 0.3
-shot_layer = NodePath("../../../shot_layer")
 active = false
 
-[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=1719528107 node_paths=PackedStringArray("shot_layer")]
+[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=1719528107]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("4_7mycd")
 shot_time = 0.3
-shot_layer = NodePath("../../../shot_layer")
 active = false
-
-[node name="shot_layer" type="Node2D" parent="." unique_id=1350823798]
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1249862425]
 position = Vector2(-173.1568, 37.86104)
@@ -376,12 +373,12 @@ position = Vector2(292, -145)
 rotates = false
 loop = false
 
-[node name="Enemy" type="Node2D" parent="Path2D/PathFollow2D" unique_id=1007943156 node_paths=PackedStringArray("shot_layer")]
+[node name="Enemy" type="Node2D" parent="Path2D/PathFollow2D" unique_id=1007943156]
 process_mode = 4
 visible = false
 script = ExtResource("4_lquwl")
 health = 8
-shot_layer = NodePath("../../../shot_layer")
+explosion = ExtResource("10_ycdy4")
 shot = ExtResource("3_h2yge")
 
 [node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/Enemy" unique_id=1099447308]
@@ -406,12 +403,12 @@ position = Vector2(1628, -145)
 rotates = false
 loop = false
 
-[node name="Enemy" type="Node2D" parent="Path2D2/PathFollow2D" unique_id=245590658 node_paths=PackedStringArray("shot_layer")]
+[node name="Enemy" type="Node2D" parent="Path2D2/PathFollow2D" unique_id=245590658]
 process_mode = 4
 visible = false
 script = ExtResource("4_lquwl")
 health = 8
-shot_layer = NodePath("../../../shot_layer")
+explosion = ExtResource("10_ycdy4")
 shot = ExtResource("3_h2yge")
 
 [node name="Area2D" type="Area2D" parent="Path2D2/PathFollow2D/Enemy" unique_id=30711302]
@@ -427,6 +424,10 @@ rotation = 0.61086524
 [node name="Sprite2D" type="Sprite2D" parent="Path2D2/PathFollow2D/Enemy" unique_id=1420523151]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_5vw27")
+
+[node name="shot_layer" type="Node2D" parent="." unique_id=1350823798 groups=["shot_layer"]]
+
+[node name="explosion_layer" type="Node2D" parent="." unique_id=1806628524 groups=["explosion_layer"]]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=796814369]
 libraries/ = SubResource("AnimationLibrary_272bh")

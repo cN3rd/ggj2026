@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://db6oms5y1q174"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_li53o"]
+[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_2i2yq"]
 
 [sub_resource type="Curve2D" id="Curve2D_li53o"]
 _data = {
@@ -129,6 +130,7 @@ loop = false
 
 [node name="Shot" type="Node2D" parent="ShotPath1/PathFollow2D" unique_id=477710227]
 script = ExtResource("1_li53o")
+explosion = ExtResource("2_2i2yq")
 
 [node name="Area2D" type="Area2D" parent="ShotPath1/PathFollow2D/Shot" unique_id=1188837913]
 collision_layer = 2
@@ -153,6 +155,7 @@ loop = false
 
 [node name="Shot" type="Node2D" parent="ShotPath2/PathFollow2D" unique_id=1280581788]
 script = ExtResource("1_li53o")
+explosion = ExtResource("2_2i2yq")
 
 [node name="Area2D" type="Area2D" parent="ShotPath2/PathFollow2D/Shot" unique_id=1576228274]
 collision_layer = 2
