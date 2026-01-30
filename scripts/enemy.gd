@@ -25,8 +25,8 @@ func shoot() -> void:
 	shotInstance.position = shot_layer.to_local(self.global_position)
 	if homing:
 		var player := get_tree().get_first_node_in_group('player') as Node2D
-		shotInstance.rotation = get_angle_to(player.global_position) - PI * 0.5
-	elif aim != null:
+		shotInstance.rotation = global_position.angle_to_point(player.global_position) - PI*0.5
+	else:
 		shotInstance.rotation = aim.rotation
 	shot_layer.add_child(shotInstance)
 

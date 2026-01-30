@@ -38,7 +38,7 @@ func _physics_process(delta: float) -> void:
 	if current_weapon != last_active_weapon:
 		last_active_weapon = current_weapon
 		_set_active_weapon(current_weapon)
-	if health < MAX_HEALTH:
+	if health < MAX_HEALTH && armed:
 		heal_timer += delta
 		while health < MAX_HEALTH && heal_timer > HEAL_MIN_TIME:
 			heal_timer -= HEAL_REPEAT_TIME

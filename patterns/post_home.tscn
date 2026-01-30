@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://biuja7qx0t6q0"]
+[gd_scene format=3 uid="uid://2qt4iqsq0tb7"]
 
-[ext_resource type="PackedScene" uid="uid://cjutvbdujaeol" path="res://shot.tscn" id="1_igr5w"]
+[ext_resource type="PackedScene" uid="uid://cjutvbdujaeol" path="res://shot.tscn" id="1_720gr"]
+[ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="2_iaxbs"]
 
 [sub_resource type="Animation" id="Animation_1bvp3"]
 length = 0.001
@@ -19,7 +20,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_h2yge"]
 resource_name = "shot_movement"
-length = 6.0
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -27,10 +28,10 @@ tracks/0/path = NodePath("Shot:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 6),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(0.4, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(0, 3000)]
+"values": [Vector2(0, 0), Vector2(0, 300)]
 }
 tracks/1/type = "method"
 tracks/1/imported = false
@@ -39,11 +40,25 @@ tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(6),
+"times": PackedFloat32Array(2),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"queue_free"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Shot")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"shoot"
 }]
 }
 
@@ -53,9 +68,11 @@ _data = {
 &"shot_movement": SubResource("Animation_h2yge")
 }
 
-[node name="scrolling_shot" type="Node2D" unique_id=1341587783]
+[node name="post_home" type="Node2D" unique_id=1341587783]
 
-[node name="Shot" parent="." unique_id=143353712 instance=ExtResource("1_igr5w")]
+[node name="Shot" parent="." unique_id=143353712 instance=ExtResource("1_720gr")]
+shot = ExtResource("2_iaxbs")
+homing = true
 damage = 20
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948720595]
