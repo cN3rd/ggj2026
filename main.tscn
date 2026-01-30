@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://c51cwqueyieuv" path="res://art/sliced_03.png" id="3_dg77c"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon2.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" path="res://weapons/weapon2.tscn" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dq5hirxu70phl" path="res://art/sliced_27.png" id="4_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
 animations = [{
@@ -324,6 +325,12 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D" unique_id=227929407]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1768144407]
+position = Vector2(-6.9999995, 1.9999999)
+scale = Vector2(0.70442706, 0.7044271)
+texture = ExtResource("12_dg77c")
+centered = false
 
 [node name="Player" type="Area2D" parent="." unique_id=523824402]
 position = Vector2(960, 980)
