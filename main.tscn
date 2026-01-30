@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b40yla7uncvvk" path="res://weapons/weapon2_4.tscn" id="12_82xsv"]
 [ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://2qt4iqsq0tb7" path="res://patterns/post_home.tscn" id="17_074og"]
+[ext_resource type="AudioStream" uid="uid://8agbfuoqm4ks" path="res://sound/GAMEPLAY MUSIC.wav" id="19_cegan"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
 animations = [{
@@ -672,3 +673,7 @@ polygon = PackedVector2Array(184, 829, 1693, 837, 1688, 1031, 192, 1037)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=796814369]
 libraries/ = SubResource("AnimationLibrary_272bh")
 autoplay = &"level"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=503906334]
+stream = ExtResource("19_cegan")
+autoplay = true

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cbp45i6p744nq"]
 
 [ext_resource type="Script" uid="uid://bwua26lo4jlum" path="res://scripts/menu.gd" id="1_lti8b"]
+[ext_resource type="AudioStream" uid="uid://c3nnl5dlywvk1" path="res://sound/menu music.wav" id="2_ouk20"]
 
 [sub_resource type="Animation" id="Animation_ouk20"]
 length = 0.001
@@ -65,3 +66,7 @@ uv = PackedVector2Array(-226, -58, -139, 9, -223, 61)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1498458690]
 libraries/ = SubResource("AnimationLibrary_ytr4m")
 autoplay = &"select_1"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874078153]
+stream = ExtResource("2_ouk20")
+autoplay = true

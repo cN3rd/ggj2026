@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://yfyhplq44w5m"]
 
 [ext_resource type="Script" uid="uid://coj4asv530260" path="res://scripts/return_to_menu.gd" id="1_4nh4k"]
+[ext_resource type="AudioStream" uid="uid://lhke1hsakcoh" path="res://sound/lose.wav" id="2_tpdqf"]
 
 [node name="Gameover" type="Node2D" unique_id=1267112362]
 script = ExtResource("1_4nh4k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=810986360]
+stream = ExtResource("2_tpdqf")
+autoplay = true
