@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cov6162x2erkx" path="res://scripts/emitter.gd" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://scrolling_shot.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon2.tscn" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dm0k"]
@@ -98,11 +99,18 @@ uv = PackedVector2Array(288, 8)
 
 [node name="Weapons" type="Node2D" parent="Player" unique_id=1895541199]
 
-[node name="Weapon" type="Node2D" parent="Player/Weapons" unique_id=571644371 node_paths=PackedStringArray("shot_layer")]
+[node name="Weapon1" type="Node2D" parent="Player/Weapons" unique_id=571644371 node_paths=PackedStringArray("shot_layer")]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("3_1bvp3")
+shot_time = 0.6
+shot_layer = NodePath("../../../shot_layer")
+
+[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=1473051817 node_paths=PackedStringArray("shot_layer")]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("4_7mycd")
 shot_time = 0.3
 shot_layer = NodePath("../../../shot_layer")
+active = false
 
 [node name="shot_layer" type="Node2D" parent="." unique_id=1350823798]
 

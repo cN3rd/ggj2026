@@ -9,6 +9,8 @@ class_name Emitter
 var timer : float = 0
 
 func _physics_process(delta: float) -> void:
+	if !active:
+		return
 	timer += delta
 	if timer >= shot_time:
 		var shotInstance : Node2D = shot.instantiate()
