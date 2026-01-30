@@ -3,6 +3,8 @@ extends Node2D
 @export var health : int = 10
 @onready var area_2d: Area2D = $Area2D
 @export var shot_layer : Node2D
+@export var shot: PackedScene
+@onready var aim: Node2D = $Aim
 
 
 var killed : bool = false
@@ -14,11 +16,12 @@ func _ready() -> void:
 	area_2d.area_entered.connect(_on_area_entered)
 
 
-func shoot(shot: PackedScene) -> void:
+func shoot() -> void:
 	if killed:
 		return
 	var shotInstance : Node2D = shot.instantiate()
 	shotInstance.position = shot_layer.to_local(self.global_position)
+	shotInstance.rotation = aim.rotation
 	shot_layer.add_child(shotInstance)
 
 func activate() -> void:
