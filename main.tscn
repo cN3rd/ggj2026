@@ -2,11 +2,32 @@
 
 [ext_resource type="Script" uid="uid://b0vl1jc2ice11" path="res://scripts/player.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://cov6162x2erkx" path="res://scripts/emitter.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://qlsbmj7v1j7y" path="res://art/sliced_24.png" id="2_efxa6"]
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c51cwqueyieuv" path="res://art/sliced_03.png" id="3_dg77c"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon2.tscn" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dq5hirxu70phl" path="res://art/sliced_27.png" id="4_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_efxa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dg77c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ycdy4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dm0k"]
 radius = 5.0
@@ -19,6 +40,12 @@ point_count = 6
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7mycd"]
 radius = 100.0
+
+[sub_resource type="Curve2D" id="Curve2D_efxa6"]
+_data = {
+"points": PackedVector2Array(-55.924427, -338.49176, -55.924, 338.492, 1628, -145, 79.945, -6.71, -79.945, 6.71, 901.153, 363.012, 0, 0, 0, 0, 955.992, 360.908, 0, 0, 0, 0, 857.468, 348.287, 3.997, 68.853, -3.997, -68.853, 973.652, 236.797, 2.737, 179.864, 2.7368317, -179.86438, 291.419, -177.605)
+}
+point_count = 6
 
 [sub_resource type="Animation" id="Animation_lquwl"]
 length = 0.001
@@ -58,10 +85,46 @@ tracks/2/keys = {
 "update": 1,
 "values": [ExtResource("3_h2yge")]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Path2D2/PathFollow2D:progress_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Path2D2/PathFollow2D/Enemy/Aim:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.61086524]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Path2D2/PathFollow2D/Enemy:shot")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_h2yge")]
+}
 
 [sub_resource type="Animation" id="Animation_7mycd"]
 resource_name = "level"
-length = 13.0
+length = 15.0
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -158,6 +221,101 @@ tracks/3/keys = {
 "method": &"queue_free"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Path2D2/PathFollow2D:progress_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 6.1, 9.3, 10.6, 10.799999, 14.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.4202, 0.45, 0.525, 1.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Path2D2/PathFollow2D/Enemy/Aim:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(6.8, 9, 10.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.6108652381980153, -0.08726646259971647, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Path2D2/PathFollow2D/Enemy:shot")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(9.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_272bh")]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Path2D2/PathFollow2D/Enemy")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(6.1, 6.8, 7, 7.2, 7.4, 7.6, 7.7999997, 8, 8.2, 8.4, 8.6, 8.799999, 9, 10.7, 10.799999, 14.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
 _data = {
@@ -171,13 +329,12 @@ _data = {
 position = Vector2(960, 980)
 script = ExtResource("1_ig7tw")
 
+[node name="Sprite" type="AnimatedSprite2D" parent="Player" unique_id=2141385949]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_w48qg")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1968148602]
 shape = SubResource("CircleShape2D_7dm0k")
-
-[node name="Polygon2D" type="Polygon2D" parent="Player" unique_id=1201528233]
-scale = Vector2(10, 10)
-polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
-uv = PackedVector2Array(288, 8)
 
 [node name="Weapons" type="Node2D" parent="Player" unique_id=1895541199]
 
@@ -194,11 +351,17 @@ shot_time = 0.3
 shot_layer = NodePath("../../../shot_layer")
 active = false
 
+[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=1719528107 node_paths=PackedStringArray("shot_layer")]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("4_7mycd")
+shot_time = 0.3
+shot_layer = NodePath("../../../shot_layer")
+active = false
+
 [node name="shot_layer" type="Node2D" parent="." unique_id=1350823798]
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1249862425]
 position = Vector2(-173.1568, 37.86104)
-scale = Vector2(1.0758795, 0.95076585)
 curve = SubResource("Curve2D_7mycd")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=882856222]
@@ -221,12 +384,42 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemy/Area2D" unique_id=613467100]
 shape = SubResource("CircleShape2D_7mycd")
 
-[node name="Polygon2D" type="Polygon2D" parent="Path2D/PathFollow2D/Enemy/Area2D" unique_id=668274095]
-color = Color(0, 1, 0, 1)
-polygon = PackedVector2Array(-69, -17, 4, 50, 60, -28)
-uv = PackedVector2Array(-282, -33, -209, 34, -153, -44)
-
 [node name="Aim" type="Node2D" parent="Path2D/PathFollow2D/Enemy" unique_id=1090988482]
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Enemy" unique_id=674440529]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=1736331700]
+position = Vector2(-173.1568, 37.86104)
+curve = SubResource("Curve2D_efxa6")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2" unique_id=577319532]
+position = Vector2(1628, -145)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Path2D2/PathFollow2D" unique_id=245590658 node_paths=PackedStringArray("shot_layer")]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 8
+shot_layer = NodePath("../../../shot_layer")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Path2D2/PathFollow2D/Enemy" unique_id=30711302]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D2/PathFollow2D/Enemy/Area2D" unique_id=865208867]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Path2D2/PathFollow2D/Enemy" unique_id=681562281]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D2/PathFollow2D/Enemy" unique_id=1420523151]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=796814369]
 libraries/ = SubResource("AnimationLibrary_272bh")

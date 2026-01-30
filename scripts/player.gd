@@ -3,7 +3,8 @@ extends Area2D
 #東能
 
 @onready var weapons: Node2D = $Weapons
-const WEAPON_HEALTH_LEVELS = [50]
+@onready var sprite: AnimatedSprite2D = $Sprite
+const WEAPON_HEALTH_LEVELS = [70, 30]
 const SCREEN_SIZE = Vector2(1920, 1080)
 const SPEED = 1000
 const MAX_HEALTH = 100
@@ -59,6 +60,8 @@ func _on_area_entered(area: Area2D) -> void:
 		get_tree().call_deferred('reload_current_scene')
 
 func _set_active_weapon(which: int) -> void:
+	if which >= 0 && which <= WEAPON_HEALTH_LEVELS.size():
+		sprite.frame = which
 	for child in weapons.get_children():
 		var weapon := child as Emitter
 		if weapon == null:
