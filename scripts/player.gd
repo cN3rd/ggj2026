@@ -67,9 +67,8 @@ func _on_area_entered(area: Area2D) -> void:
 		health = 0
 		_set_active_weapon(-1)
 		visible = false
-		#TODO game over screen
 		await get_tree().create_timer(DEATH_TIME).timeout
-		get_tree().call_deferred('reload_current_scene')
+		get_tree().change_scene_to_packed(preload("res://gameover.tscn"))
 
 func _set_active_weapon(which: int) -> void:
 	if which >= 0 && which < sprite.sprite_frames.get_frame_count(sprite.animation):
@@ -85,5 +84,4 @@ func _set_active_weapon(which: int) -> void:
 		which -= 1
 
 func win() -> void:
-	#TODO victory screen
-	get_tree().call_deferred('reload_current_scene')
+	get_tree().change_scene_to_packed(preload("res://victory.tscn"))

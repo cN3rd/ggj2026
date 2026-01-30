@@ -33,14 +33,14 @@ func activate() -> void:
 func _on_area_entered(area: Area2D) -> void:
 	if killed || !active:
 		return
-	var shot: Shot = area.get_parent() as Shot
-	if shot == null:
+	var shotImpact: Shot = area.get_parent() as Shot
+	if shotImpact == null:
 		return
-	if shot.already_hit:
+	if shotImpact.already_hit:
 		return
-	shot.already_hit = true
-	shot.impact.emit()
-	var damage := shot.damage
+	shotImpact.already_hit = true
+	shotImpact.impact.emit()
+	var damage := shotImpact.damage
 	if health > damage:
 		health -= damage
 	else:
