@@ -14,6 +14,7 @@ const DEATH_TIME = 2.0
 @export var health : int = MAX_HEALTH
 @export var margin : float = 50
 @export var explosion: PackedScene = null
+@export var armed: bool = true
 var last_active_weapon : int = 0
 var heal_timer : float = 0
 
@@ -29,9 +30,11 @@ func _physics_process(delta: float) -> void:
 	position += direction * SPEED * delta
 	position.x = clampf(position.x, margin, SCREEN_SIZE.x - margin)
 	position.y = clampf(position.y, margin, SCREEN_SIZE.y - margin)
-	var current_weapon = 0
-	while current_weapon < WEAPON_HEALTH_LEVELS.size() && health < WEAPON_HEALTH_LEVELS[current_weapon]:
-		current_weapon += 1
+	var current_weapon : int = -1
+	if armed:
+		current_weapon = 0
+		while current_weapon < WEAPON_HEALTH_LEVELS.size() && health < WEAPON_HEALTH_LEVELS[current_weapon]:
+			current_weapon += 1
 	if current_weapon != last_active_weapon:
 		last_active_weapon = current_weapon
 		_set_active_weapon(current_weapon)
@@ -77,3 +80,7 @@ func _set_active_weapon(which: int) -> void:
 			continue
 		weapon.active = (which == 0)
 		which -= 1
+
+func win() -> void:
+	#TODO victory screen
+	get_tree().call_deferred('reload_current_scene')
