@@ -4,7 +4,7 @@ extends Area2D
 
 @onready var weapons: Node2D = $Weapons
 @onready var sprite: AnimatedSprite2D = $Sprite
-const WEAPON_HEALTH_LEVELS = [70, 30]
+const WEAPON_HEALTH_LEVELS = [90, 70, 50, 20]
 const SCREEN_SIZE = Vector2(1920, 1080)
 const SPEED = 1000
 const MAX_HEALTH = 100

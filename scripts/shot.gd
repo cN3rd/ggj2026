@@ -39,7 +39,6 @@ func shoot() -> void:
 		shotInstance.rotation = global_position.angle_to_point(player.global_position) - PI*0.5
 	elif aim_at != null:
 		shotInstance.rotation = global_position.angle_to_point(aim_at.global_position) - PI*0.5
-	print(shot_layer)
 	shot_layer.add_child(shotInstance)
 	if shot_mode == 'consume':
 		queue_free()
