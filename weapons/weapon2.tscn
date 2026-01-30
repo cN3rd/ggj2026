@@ -2,37 +2,75 @@
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_li53o"]
 
+[sub_resource type="Curve2D" id="Curve2D_li53o"]
+_data = {
+"points": PackedVector2Array(-11.11984, 400.31424, 0, -800, 0, 0, -500, 0, 555.992, 5.55992, 3000, -800)
+}
+point_count = 2
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_dit84"]
 radius = 20.0
 
+[sub_resource type="Curve2D" id="Curve2D_2i2yq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, -800, 0, 0, 500, 0, 0, 0, -3000, -800)
+}
+point_count = 2
+
 [sub_resource type="Animation" id="Animation_4vpdc"]
 length = 0.001
-tracks/0/type = "bezier"
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Shot1:position:x")
+tracks/0/path = NodePath("ShotPath2/PathFollow2D:progress_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
 }
-tracks/1/type = "bezier"
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Shot1:position:y")
+tracks/1/path = NodePath("ShotPath1/PathFollow2D:progress_ratio")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ShotPath2/PathFollow2D:progress")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3285.4165]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ShotPath1/PathFollow2D:progress")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3285.4165]
 }
 
 [sub_resource type="Animation" id="Animation_amxoe"]
 resource_name = "shot_movement"
-length = 3.0
+length = 2.0
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -40,56 +78,36 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(3),
+"times": PackedFloat32Array(2),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"queue_free"
 }]
 }
-tracks/1/type = "bezier"
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Shot1:position:x")
+tracks/1/path = NodePath("ShotPath2/PathFollow2D:progress")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0, 0, 2800, -0.8333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 3)
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1.5, 1),
+"update": 0,
+"values": [0.0, 3285.4165]
 }
-tracks/2/type = "bezier"
+tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Shot1:position:y")
+tracks/2/path = NodePath("ShotPath1/PathFollow2D:progress")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(2, 0),
-"points": PackedFloat32Array(0, 0, 0, 0, 0, -800, -3, 0, 0, 0),
-"times": PackedFloat32Array(0, 3)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Shot2:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0, 0, -2800, -0.8333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 3)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Shot2:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, 0, 0, 0, 0, -800, -3, 0, 0, 0),
-"times": PackedFloat32Array(0, 3)
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1.5, 1),
+"update": 0,
+"values": [0.0, 3285.4165]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ndfm1"]
@@ -100,33 +118,50 @@ _data = {
 
 [node name="Weapon2" type="Node2D" unique_id=535077949]
 
-[node name="Shot1" type="Node2D" parent="." unique_id=477710227]
+[node name="ShotPath1" type="Path2D" parent="." unique_id=494379510]
+curve = SubResource("Curve2D_li53o")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="ShotPath1" unique_id=417994309]
+position = Vector2(2999.9998, -800)
+progress = 3285.4165
+rotates = false
+loop = false
+
+[node name="Shot" type="Node2D" parent="ShotPath1/PathFollow2D" unique_id=477710227]
 script = ExtResource("1_li53o")
 
-[node name="Area2D" type="Area2D" parent="Shot1" unique_id=1188837913]
+[node name="Area2D" type="Area2D" parent="ShotPath1/PathFollow2D/Shot" unique_id=1188837913]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Shot1/Area2D" unique_id=113801648]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=113801648]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="Shot1/Area2D" unique_id=1673005602]
+[node name="Polygon2D" type="Polygon2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=1673005602]
 color = Color(1, 0, 1, 1)
 polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
 uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
 
-[node name="Shot2" type="Node2D" parent="." unique_id=1280581788]
-position = Vector2(-2800, -800)
+[node name="ShotPath2" type="Path2D" parent="." unique_id=1247490279]
+curve = SubResource("Curve2D_2i2yq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="ShotPath2" unique_id=2122959339]
+position = Vector2(-2999.9998, -800)
+progress = 3285.4165
+rotates = false
+loop = false
+
+[node name="Shot" type="Node2D" parent="ShotPath2/PathFollow2D" unique_id=1280581788]
 script = ExtResource("1_li53o")
 
-[node name="Area2D" type="Area2D" parent="Shot2" unique_id=1576228274]
+[node name="Area2D" type="Area2D" parent="ShotPath2/PathFollow2D/Shot" unique_id=1576228274]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Shot2/Area2D" unique_id=1043723297]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1043723297]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="Shot2/Area2D" unique_id=1116562549]
+[node name="Polygon2D" type="Polygon2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1116562549]
 color = Color(1, 0, 1, 1)
 polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
 uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)

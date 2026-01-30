@@ -10,6 +10,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dm0k"]
 radius = 5.0
 
+[sub_resource type="Curve2D" id="Curve2D_7mycd"]
+_data = {
+"points": PackedVector2Array(22.974873, -390.57285, -22.974873, 390.57285, 292, -145, -165.41908, -9.189949, 165.41908, 9.189949, 977, 397, 22.974873, 124.0643, -22.974873, -124.0643, 1358, 264, 101.08944, -22.974873, -101.08944, 22.974873, 986, 158, -78.11456, -91.89949, 78.11456, 91.89949, 673, 517, -257.31857, -9.189949, 257.31857, 9.189949, 2282, 769)
+}
+point_count = 6
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_7mycd"]
 radius = 100.0
 
@@ -18,40 +24,28 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Enemy:position")
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(984, 287)]
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_7mycd"]
 resource_name = "level"
 length = 13.0
 step = 0.1
-tracks/0/type = "value"
+tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Enemy:position")
+tracks/0/path = NodePath("Path2D/PathFollow2D/Enemy")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3, 6.05, 9.030001, 13),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(294, -152), Vector2(294, -152), Vector2(984, 287), Vector2(984, 287), Vector2(2082, 394)]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Enemy")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(3, 6.5, 7, 7.5, 8, 8.5, 13),
+"times": PackedFloat32Array(3, 6.5, 7, 7.5, 8, 8.5, 11),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "values": [{
 "args": [],
@@ -75,6 +69,18 @@ tracks/1/keys = {
 "args": [],
 "method": &"queue_free"
 }]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 6.1, 8.6, 11),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.2338, 0.5065, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
@@ -114,22 +120,29 @@ active = false
 
 [node name="shot_layer" type="Node2D" parent="." unique_id=1350823798]
 
-[node name="Enemy" type="Node2D" parent="." unique_id=1007943156 node_paths=PackedStringArray("shot_layer")]
+[node name="Path2D" type="Path2D" parent="." unique_id=1249862425]
+curve = SubResource("Curve2D_7mycd")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=882856222]
+position = Vector2(292, -145)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Path2D/PathFollow2D" unique_id=1007943156 node_paths=PackedStringArray("shot_layer")]
 process_mode = 4
 visible = false
-position = Vector2(984, 287)
 script = ExtResource("4_lquwl")
 health = 8
-shot_layer = NodePath("../shot_layer")
+shot_layer = NodePath("../../../shot_layer")
 
-[node name="Area2D" type="Area2D" parent="Enemy" unique_id=1099447308]
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/Enemy" unique_id=1099447308]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Area2D" unique_id=613467100]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemy/Area2D" unique_id=613467100]
 shape = SubResource("CircleShape2D_7mycd")
 
-[node name="Polygon2D" type="Polygon2D" parent="Enemy/Area2D" unique_id=668274095]
+[node name="Polygon2D" type="Polygon2D" parent="Path2D/PathFollow2D/Enemy/Area2D" unique_id=668274095]
 color = Color(0, 1, 0, 1)
 polygon = PackedVector2Array(-69, -17, 4, 50, 60, -28)
 uv = PackedVector2Array(-282, -33, -209, 34, -153, -44)
