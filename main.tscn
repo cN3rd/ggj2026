@@ -6,12 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://c51cwqueyieuv" path="res://art/sliced_03.png" id="3_dg77c"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon2.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon3.tscn" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dq5hirxu70phl" path="res://art/sliced_27.png" id="4_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://c24l71gh58c33" path="res://weapons/weapon2_1.tscn" id="9_yaehf"]
+[ext_resource type="PackedScene" uid="uid://x780v06384un" path="res://weapons/weapon2_2.tscn" id="10_074og"]
 [ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="10_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://co7lsm6v2rxgq" path="res://weapons/weapon2_3.tscn" id="11_cegan"]
+[ext_resource type="PackedScene" uid="uid://b40yla7uncvvk" path="res://weapons/weapon2_4.tscn" id="12_82xsv"]
 [ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
@@ -33,6 +37,120 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dm0k"]
 radius = 5.0
+
+[sub_resource type="Animation" id="Animation_ycdy4"]
+resource_name = "shoot"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShotEmitter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w48qg"]
+_data = {
+&"shoot": SubResource("Animation_ycdy4")
+}
+
+[sub_resource type="Animation" id="Animation_w48qg"]
+resource_name = "shoot"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShotEmitter1")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShotEmitter2")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ShotEmitter3")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ShotEmitter4")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.75),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vivmo"]
+_data = {
+&"shoot": SubResource("Animation_w48qg")
+}
+
+[sub_resource type="Animation" id="Animation_2cqfq"]
+resource_name = "shoot"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("./ShotEmitter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yaehf"]
+_data = {
+&"shoot": SubResource("Animation_2cqfq")
+}
 
 [sub_resource type="Curve2D" id="Curve2D_7mycd"]
 _data = {
@@ -409,22 +527,44 @@ shape = SubResource("CircleShape2D_7dm0k")
 
 [node name="Weapons" type="Node2D" parent="Player" unique_id=1895541199]
 
-[node name="Weapon1" type="Node2D" parent="Player/Weapons" unique_id=571644371]
+[node name="Weapon1" type="Node2D" parent="Player/Weapons" unique_id=1247794831]
+
+[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon1" unique_id=571644371]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("3_1bvp3")
-shot_time = 0.6
 
-[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=1473051817]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon1" unique_id=461525987 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_w48qg")
+
+[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=941410251]
+
+[node name="ShotEmitter1" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=1473051817]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("9_yaehf")
+
+[node name="ShotEmitter2" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=40657563]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("10_074og")
+
+[node name="ShotEmitter3" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=4117253]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("11_cegan")
+
+[node name="ShotEmitter4" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=150621315]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("12_82xsv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon2" unique_id=1056186989 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_vivmo")
+
+[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=611492356]
+
+[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=1719528107]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("4_7mycd")
-shot_time = 0.3
-active = false
 
-[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=1719528107]
-script = ExtResource("2_0xm2m")
-shot = ExtResource("4_7mycd")
-shot_time = 0.3
-active = false
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon3" unique_id=1530260296 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_yaehf")
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1249862425]
 position = Vector2(-173.1568, 37.86104)

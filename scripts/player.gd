@@ -15,7 +15,7 @@ const DEATH_TIME = 2.0
 @export var margin : float = 50
 @export var explosion: PackedScene = null
 @export var armed: bool = true
-var last_active_weapon : int = 0
+var last_active_weapon : int = -1
 var heal_timer : float = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -72,13 +72,16 @@ func _on_area_entered(area: Area2D) -> void:
 		get_tree().call_deferred('reload_current_scene')
 
 func _set_active_weapon(which: int) -> void:
-	if which >= 0 && which <= WEAPON_HEALTH_LEVELS.size():
+	if which >= 0 && which < sprite.sprite_frames.get_frame_count(sprite.animation):
 		sprite.frame = which
-	for child in weapons.get_children():
-		var weapon := child as Emitter
+	for child in get_tree().get_nodes_in_group('weapon'):
+		var weapon := child as AnimationPlayer
 		if weapon == null:
 			continue
-		weapon.active = (which == 0)
+		if which == 0:
+			weapon.play('shoot')
+		else:
+			weapon.stop()
 		which -= 1
 
 func win() -> void:
