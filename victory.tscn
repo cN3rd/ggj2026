@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://coj4asv530260" path="res://scripts/return_to_menu.gd" id="1_7bnjr"]
 [ext_resource type="AudioStream" uid="uid://dc5m56faec0v1" path="res://sound/victory.wav" id="2_v31sk"]
+[ext_resource type="Texture2D" uid="uid://df2fgt7k6lbm7" path="res://art/ui/win-screen/background.png" id="3_15ee3"]
+[ext_resource type="Texture2D" uid="uid://ge3uvils2rn" path="res://art/ui/win-screen/you win.png" id="4_u1yty"]
+[ext_resource type="Texture2D" uid="uid://ccunbubpht5vl" path="res://art/ui/lose-screen/backButton.png" id="5_msd2c"]
+[ext_resource type="Texture2D" uid="uid://cht2usggp8a4r" path="res://art/ui/lose-screen/backButtonHover.png" id="6_ebtt0"]
 
 [node name="Victory" type="Node2D" unique_id=925163347]
 script = ExtResource("1_7bnjr")
@@ -9,3 +13,21 @@ script = ExtResource("1_7bnjr")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=73750162]
 stream = ExtResource("2_v31sk")
 autoplay = true
+
+[node name="BG" type="Sprite2D" parent="." unique_id=1035277793]
+texture = ExtResource("3_15ee3")
+centered = false
+
+[node name="Text" type="Sprite2D" parent="." unique_id=346867533]
+texture = ExtResource("4_u1yty")
+offset = Vector2(960, 515)
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1056963617]
+offset_left = 764.0
+offset_top = 620.0
+offset_right = 1153.0
+offset_bottom = 730.0
+texture_normal = ExtResource("5_msd2c")
+texture_pressed = ExtResource("5_msd2c")
+texture_hover = ExtResource("6_ebtt0")
+texture_focused = ExtResource("5_msd2c")
