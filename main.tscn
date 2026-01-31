@@ -859,6 +859,294 @@ tracks/40/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1/Distance:position")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1:rotation")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2/Distance:position")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3/Distance:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4/Distance:position")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5/Distance:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6/Distance:position")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2000, 0)]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7/Distance:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8/Distance:position")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9/Distance:position")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10/Distance:position")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11/Distance:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12/Distance:position")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/54/type = "value"
+tracks/54/imported = false
+tracks/54/enabled = true
+tracks/54/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2:rotation")
+tracks/54/interp = 1
+tracks/54/loop_wrap = true
+tracks/54/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/55/type = "value"
+tracks/55/imported = false
+tracks/55/enabled = true
+tracks/55/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3:rotation")
+tracks/55/interp = 1
+tracks/55/loop_wrap = true
+tracks/55/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4:rotation")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5:rotation")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6:rotation")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/59/type = "value"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7:rotation")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/60/type = "value"
+tracks/60/imported = false
+tracks/60/enabled = true
+tracks/60/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8:rotation")
+tracks/60/interp = 1
+tracks/60/loop_wrap = true
+tracks/60/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/61/type = "value"
+tracks/61/imported = false
+tracks/61/enabled = true
+tracks/61/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9:rotation")
+tracks/61/interp = 1
+tracks/61/loop_wrap = true
+tracks/61/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/62/type = "value"
+tracks/62/imported = false
+tracks/62/enabled = true
+tracks/62/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10:rotation")
+tracks/62/interp = 1
+tracks/62/loop_wrap = true
+tracks/62/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/63/type = "value"
+tracks/63/imported = false
+tracks/63/enabled = true
+tracks/63/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11:rotation")
+tracks/63/interp = 1
+tracks/63/loop_wrap = true
+tracks/63/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/64/type = "value"
+tracks/64/imported = false
+tracks/64/enabled = true
+tracks/64/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12:rotation")
+tracks/64/interp = 1
+tracks/64/loop_wrap = true
+tracks/64/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_7mycd"]
 resource_name = "level"
@@ -1104,34 +1392,46 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Player:armed")
+tracks/11/path = NodePath("Chat2:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
+"times": PackedFloat32Array(66),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Player:armed")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
 "times": PackedFloat32Array(15, 20, 66),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
 }
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("Enemies/Wave2_Enemy1/PathFollow2D:progress_ratio")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Enemies/Wave2_Enemy1/PathFollow2D:progress_ratio")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
 "times": PackedFloat32Array(21, 21.7, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30, 30.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.64, 0.64, 0.68999994, 0.68999994, 0.79, 0.79, 0.68999994, 0.68999994, 0.79, 0.79, 0.68999994, 0.68999994, 0.79, 0.79, 1.0]
 }
-tracks/13/type = "method"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Enemies/Wave2_Enemy1/PathFollow2D/Enemy")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
+tracks/14/type = "method"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Enemies/Wave2_Enemy1/PathFollow2D/Enemy")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
 "times": PackedFloat32Array(21, 30.5),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1142,25 +1442,25 @@ tracks/13/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("Enemies/Wave2_Enemy2/PathFollow2D:progress_ratio")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Enemies/Wave2_Enemy2/PathFollow2D:progress_ratio")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
 "times": PackedFloat32Array(21.1, 21.800001, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.1, 30.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.561, 0.561, 0.61, 0.61, 0.711, 0.711, 0.61, 0.61, 0.711, 0.711, 0.61, 0.61, 0.711, 0.711, 1.0]
 }
-tracks/15/type = "method"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Enemies/Wave2_Enemy2/PathFollow2D/Enemy")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
+tracks/16/type = "method"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Enemies/Wave2_Enemy2/PathFollow2D/Enemy")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
 "times": PackedFloat32Array(21.1, 30.6),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1171,25 +1471,25 @@ tracks/15/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Enemies/Wave2_Enemy3/PathFollow2D:progress_ratio")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Enemies/Wave2_Enemy3/PathFollow2D:progress_ratio")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
 "times": PackedFloat32Array(21.3, 21.999998, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.1, 30.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.64, 0.64, 0.68999994, 0.68999994, 0.79, 0.79, 0.68999994, 0.68999994, 0.79, 0.79, 0.68999994, 0.68999994, 0.79, 0.79, 1.0]
 }
-tracks/17/type = "method"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Enemies/Wave2_Enemy3/PathFollow2D/Enemy")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
+tracks/18/type = "method"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Enemies/Wave2_Enemy3/PathFollow2D/Enemy")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
 "times": PackedFloat32Array(21.3, 30.6),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1200,25 +1500,25 @@ tracks/17/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("Enemies/Wave2_Enemy4/PathFollow2D:progress_ratio")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Enemies/Wave2_Enemy4/PathFollow2D:progress_ratio")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
 "times": PackedFloat32Array(21.4, 22.099998, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.2, 30.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.561, 0.561, 0.61, 0.61, 0.711, 0.711, 0.61, 0.61, 0.711, 0.711, 0.61, 0.61, 0.711, 0.711, 1.0]
 }
-tracks/19/type = "method"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("Enemies/Wave2_Enemy4/PathFollow2D/Enemy")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
+tracks/20/type = "method"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Enemies/Wave2_Enemy4/PathFollow2D/Enemy")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
 "times": PackedFloat32Array(21.4, 30.7),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1229,25 +1529,25 @@ tracks/19/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("Enemies/Wave2_Enemy5/PathFollow2D:progress_ratio")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Enemies/Wave2_Enemy5/PathFollow2D:progress_ratio")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
 "times": PackedFloat32Array(21.6, 22.3, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.1, 30.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.642, 0.642, 0.69, 0.69, 0.792, 0.792, 0.69, 0.69, 0.792, 0.792, 0.69, 0.69, 0.792, 0.792, 1.0]
 }
-tracks/21/type = "method"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Enemies/Wave2_Enemy5/PathFollow2D/Enemy")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
+tracks/22/type = "method"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Enemies/Wave2_Enemy5/PathFollow2D/Enemy")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
 "times": PackedFloat32Array(21.6, 30.6),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1258,25 +1558,25 @@ tracks/21/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Enemies/Wave2_Enemy6/PathFollow2D:progress_ratio")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Enemies/Wave2_Enemy6/PathFollow2D:progress_ratio")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
 "times": PackedFloat32Array(21.699999, 22.4, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.2, 30.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.557, 0.557, 0.607, 0.607, 0.707, 0.707, 0.607, 0.607, 0.707, 0.707, 0.607, 0.607, 0.707, 0.707, 1.0]
 }
-tracks/23/type = "method"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("Enemies/Wave2_Enemy6/PathFollow2D/Enemy")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
+tracks/24/type = "method"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Enemies/Wave2_Enemy6/PathFollow2D/Enemy")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
 "times": PackedFloat32Array(21.699999, 30.7),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1287,25 +1587,25 @@ tracks/23/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/24/type = "value"
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/path = NodePath("Enemies/Wave2_Enemy7/PathFollow2D:progress_ratio")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/keys = {
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Enemies/Wave2_Enemy7/PathFollow2D:progress_ratio")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
 "times": PackedFloat32Array(21.9, 22.6, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.2, 30.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.642, 0.642, 0.69, 0.69, 0.792, 0.792, 0.69, 0.69, 0.792, 0.792, 0.69, 0.69, 0.792, 0.792, 1.0]
 }
-tracks/25/type = "method"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("Enemies/Wave2_Enemy7/PathFollow2D/Enemy")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
+tracks/26/type = "method"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Enemies/Wave2_Enemy7/PathFollow2D/Enemy")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
 "times": PackedFloat32Array(21.9, 30.7),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1316,25 +1616,25 @@ tracks/25/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/26/type = "value"
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/path = NodePath("Enemies/Wave2_Enemy8/PathFollow2D:progress_ratio")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/keys = {
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Enemies/Wave2_Enemy8/PathFollow2D:progress_ratio")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
 "times": PackedFloat32Array(22, 22.7, 23, 23.2, 23.8, 24.2, 24.8, 25.2, 25.8, 26.2, 26.8, 27.2, 27.8, 28.2, 30.300001, 30.800001),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.557, 0.557, 0.607, 0.607, 0.707, 0.707, 0.607, 0.607, 0.707, 0.707, 0.607, 0.607, 0.707, 0.707, 1.0]
 }
-tracks/27/type = "method"
-tracks/27/imported = false
-tracks/27/enabled = true
-tracks/27/path = NodePath("Enemies/Wave2_Enemy8/PathFollow2D/Enemy")
-tracks/27/interp = 1
-tracks/27/loop_wrap = true
-tracks/27/keys = {
+tracks/28/type = "method"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Enemies/Wave2_Enemy8/PathFollow2D/Enemy")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
 "times": PackedFloat32Array(22, 30.8),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
@@ -1345,27 +1645,27 @@ tracks/27/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/28/type = "value"
-tracks/28/imported = false
-tracks/28/enabled = true
-tracks/28/path = NodePath("Enemies/Wave3_Enemy1/PathFollow2D:progress_ratio")
-tracks/28/interp = 1
-tracks/28/loop_wrap = true
-tracks/28/keys = {
-"times": PackedFloat32Array(32, 33),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/29/type = "method"
+tracks/29/type = "value"
 tracks/29/imported = false
 tracks/29/enabled = true
-tracks/29/path = NodePath("Enemies/Wave3_Enemy1/PathFollow2D/Enemy")
+tracks/29/path = NodePath("Enemies/Wave3_Enemy1/PathFollow2D:progress_ratio")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = {
 "times": PackedFloat32Array(32, 33),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/30/type = "method"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("Enemies/Wave3_Enemy1/PathFollow2D/Enemy")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(32, 33),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1374,27 +1674,27 @@ tracks/29/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/30/type = "value"
-tracks/30/imported = false
-tracks/30/enabled = true
-tracks/30/path = NodePath("Enemies/Wave3_Enemy2/PathFollow2D:progress_ratio")
-tracks/30/interp = 1
-tracks/30/loop_wrap = true
-tracks/30/keys = {
-"times": PackedFloat32Array(32.5, 33.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/31/type = "method"
+tracks/31/type = "value"
 tracks/31/imported = false
 tracks/31/enabled = true
-tracks/31/path = NodePath("Enemies/Wave3_Enemy2/PathFollow2D/Enemy")
+tracks/31/path = NodePath("Enemies/Wave3_Enemy2/PathFollow2D:progress_ratio")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/keys = {
 "times": PackedFloat32Array(32.5, 33.5),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/32/type = "method"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Enemies/Wave3_Enemy2/PathFollow2D/Enemy")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(32.5, 33.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1403,27 +1703,27 @@ tracks/31/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/32/type = "value"
-tracks/32/imported = false
-tracks/32/enabled = true
-tracks/32/path = NodePath("Enemies/Wave3_Enemy3/PathFollow2D:progress_ratio")
-tracks/32/interp = 1
-tracks/32/loop_wrap = true
-tracks/32/keys = {
-"times": PackedFloat32Array(33, 34),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/33/type = "method"
+tracks/33/type = "value"
 tracks/33/imported = false
 tracks/33/enabled = true
-tracks/33/path = NodePath("Enemies/Wave3_Enemy3/PathFollow2D/Enemy")
+tracks/33/path = NodePath("Enemies/Wave3_Enemy3/PathFollow2D:progress_ratio")
 tracks/33/interp = 1
 tracks/33/loop_wrap = true
 tracks/33/keys = {
 "times": PackedFloat32Array(33, 34),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/34/type = "method"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Enemies/Wave3_Enemy3/PathFollow2D/Enemy")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(33, 34),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1432,27 +1732,27 @@ tracks/33/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/34/type = "value"
-tracks/34/imported = false
-tracks/34/enabled = true
-tracks/34/path = NodePath("Enemies/Wave3_Enemy4/PathFollow2D:progress_ratio")
-tracks/34/interp = 1
-tracks/34/loop_wrap = true
-tracks/34/keys = {
-"times": PackedFloat32Array(33.5, 34.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/35/type = "method"
+tracks/35/type = "value"
 tracks/35/imported = false
 tracks/35/enabled = true
-tracks/35/path = NodePath("Enemies/Wave3_Enemy4/PathFollow2D/Enemy")
+tracks/35/path = NodePath("Enemies/Wave3_Enemy4/PathFollow2D:progress_ratio")
 tracks/35/interp = 1
 tracks/35/loop_wrap = true
 tracks/35/keys = {
 "times": PackedFloat32Array(33.5, 34.5),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/36/type = "method"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Enemies/Wave3_Enemy4/PathFollow2D/Enemy")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(33.5, 34.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1461,27 +1761,27 @@ tracks/35/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/36/type = "value"
-tracks/36/imported = false
-tracks/36/enabled = true
-tracks/36/path = NodePath("Enemies/Wave3_Enemy5/PathFollow2D:progress_ratio")
-tracks/36/interp = 1
-tracks/36/loop_wrap = true
-tracks/36/keys = {
-"times": PackedFloat32Array(34, 35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/37/type = "method"
+tracks/37/type = "value"
 tracks/37/imported = false
 tracks/37/enabled = true
-tracks/37/path = NodePath("Enemies/Wave3_Enemy5/PathFollow2D/Enemy")
+tracks/37/path = NodePath("Enemies/Wave3_Enemy5/PathFollow2D:progress_ratio")
 tracks/37/interp = 1
 tracks/37/loop_wrap = true
 tracks/37/keys = {
 "times": PackedFloat32Array(34, 35),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/38/type = "method"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Enemies/Wave3_Enemy5/PathFollow2D/Enemy")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(34, 35),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1490,27 +1790,27 @@ tracks/37/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/38/type = "value"
-tracks/38/imported = false
-tracks/38/enabled = true
-tracks/38/path = NodePath("Enemies/Wave3_Enemy6/PathFollow2D:progress_ratio")
-tracks/38/interp = 1
-tracks/38/loop_wrap = true
-tracks/38/keys = {
-"times": PackedFloat32Array(34.5, 35.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/39/type = "method"
+tracks/39/type = "value"
 tracks/39/imported = false
 tracks/39/enabled = true
-tracks/39/path = NodePath("Enemies/Wave3_Enemy6/PathFollow2D/Enemy")
+tracks/39/path = NodePath("Enemies/Wave3_Enemy6/PathFollow2D:progress_ratio")
 tracks/39/interp = 1
 tracks/39/loop_wrap = true
 tracks/39/keys = {
 "times": PackedFloat32Array(34.5, 35.5),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/40/type = "method"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Enemies/Wave3_Enemy6/PathFollow2D/Enemy")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(34.5, 35.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1519,27 +1819,27 @@ tracks/39/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/40/type = "value"
-tracks/40/imported = false
-tracks/40/enabled = true
-tracks/40/path = NodePath("Enemies/Wave3_Enemy7/PathFollow2D:progress_ratio")
-tracks/40/interp = 1
-tracks/40/loop_wrap = true
-tracks/40/keys = {
-"times": PackedFloat32Array(35, 36),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/41/type = "method"
+tracks/41/type = "value"
 tracks/41/imported = false
 tracks/41/enabled = true
-tracks/41/path = NodePath("Enemies/Wave3_Enemy7/PathFollow2D/Enemy")
+tracks/41/path = NodePath("Enemies/Wave3_Enemy7/PathFollow2D:progress_ratio")
 tracks/41/interp = 1
 tracks/41/loop_wrap = true
 tracks/41/keys = {
 "times": PackedFloat32Array(35, 36),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/42/type = "method"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Enemies/Wave3_Enemy7/PathFollow2D/Enemy")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(35, 36),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1548,27 +1848,27 @@ tracks/41/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/42/type = "value"
-tracks/42/imported = false
-tracks/42/enabled = true
-tracks/42/path = NodePath("Enemies/Wave3_Enemy8/PathFollow2D:progress_ratio")
-tracks/42/interp = 1
-tracks/42/loop_wrap = true
-tracks/42/keys = {
-"times": PackedFloat32Array(35.5, 36.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/43/type = "method"
+tracks/43/type = "value"
 tracks/43/imported = false
 tracks/43/enabled = true
-tracks/43/path = NodePath("Enemies/Wave3_Enemy8/PathFollow2D/Enemy")
+tracks/43/path = NodePath("Enemies/Wave3_Enemy8/PathFollow2D:progress_ratio")
 tracks/43/interp = 1
 tracks/43/loop_wrap = true
 tracks/43/keys = {
 "times": PackedFloat32Array(35.5, 36.5),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/44/type = "method"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Enemies/Wave3_Enemy8/PathFollow2D/Enemy")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(35.5, 36.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1577,27 +1877,27 @@ tracks/43/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/44/type = "value"
-tracks/44/imported = false
-tracks/44/enabled = true
-tracks/44/path = NodePath("Enemies/Wave3_Enemy9/PathFollow2D:progress_ratio")
-tracks/44/interp = 1
-tracks/44/loop_wrap = true
-tracks/44/keys = {
-"times": PackedFloat32Array(36, 37),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/45/type = "method"
+tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("Enemies/Wave3_Enemy9/PathFollow2D/Enemy")
+tracks/45/path = NodePath("Enemies/Wave3_Enemy9/PathFollow2D:progress_ratio")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
 "times": PackedFloat32Array(36, 37),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/46/type = "method"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Enemies/Wave3_Enemy9/PathFollow2D/Enemy")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(36, 37),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1606,27 +1906,27 @@ tracks/45/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/46/type = "value"
-tracks/46/imported = false
-tracks/46/enabled = true
-tracks/46/path = NodePath("Enemies/Wave3_Enemy10/PathFollow2D:progress_ratio")
-tracks/46/interp = 1
-tracks/46/loop_wrap = true
-tracks/46/keys = {
-"times": PackedFloat32Array(36.5, 37.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/47/type = "method"
+tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("Enemies/Wave3_Enemy10/PathFollow2D/Enemy")
+tracks/47/path = NodePath("Enemies/Wave3_Enemy10/PathFollow2D:progress_ratio")
 tracks/47/interp = 1
 tracks/47/loop_wrap = true
 tracks/47/keys = {
 "times": PackedFloat32Array(36.5, 37.5),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/48/type = "method"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Enemies/Wave3_Enemy10/PathFollow2D/Enemy")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(36.5, 37.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1635,27 +1935,27 @@ tracks/47/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/48/type = "value"
-tracks/48/imported = false
-tracks/48/enabled = true
-tracks/48/path = NodePath("Enemies/Wave3_Enemy11/PathFollow2D:progress_ratio")
-tracks/48/interp = 1
-tracks/48/loop_wrap = true
-tracks/48/keys = {
-"times": PackedFloat32Array(37, 38),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/49/type = "method"
+tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("Enemies/Wave3_Enemy11/PathFollow2D/Enemy")
+tracks/49/path = NodePath("Enemies/Wave3_Enemy11/PathFollow2D:progress_ratio")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/keys = {
 "times": PackedFloat32Array(37, 38),
 "transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/50/type = "method"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Enemies/Wave3_Enemy11/PathFollow2D/Enemy")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(37, 38),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
@@ -1664,43 +1964,26 @@ tracks/49/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/50/type = "value"
-tracks/50/imported = false
-tracks/50/enabled = true
-tracks/50/path = NodePath("Enemies/Wave3_Enemy12/PathFollow2D:progress_ratio")
-tracks/50/interp = 1
-tracks/50/loop_wrap = true
-tracks/50/keys = {
-"times": PackedFloat32Array(37.5, 38.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/51/type = "method"
+tracks/51/type = "value"
 tracks/51/imported = false
 tracks/51/enabled = true
-tracks/51/path = NodePath("Enemies/Wave3_Enemy12/PathFollow2D/Enemy")
+tracks/51/path = NodePath("Enemies/Wave3_Enemy12/PathFollow2D:progress_ratio")
 tracks/51/interp = 1
 tracks/51/loop_wrap = true
 tracks/51/keys = {
 "times": PackedFloat32Array(37.5, 38.5),
 "transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"activate"
-}, {
-"args": [],
-"method": &"queue_free"
-}]
+"update": 0,
+"values": [0.0, 1.0]
 }
 tracks/52/type = "method"
 tracks/52/imported = false
 tracks/52/enabled = true
-tracks/52/path = NodePath("Enemies/Wave3_Enemy13/PathFollow2D/Enemy")
+tracks/52/path = NodePath("Enemies/Wave3_Enemy12/PathFollow2D/Enemy")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = {
-"times": PackedFloat32Array(38, 39),
+"times": PackedFloat32Array(37.5, 38.5),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1725,11 +2008,11 @@ tracks/53/keys = {
 tracks/54/type = "method"
 tracks/54/imported = false
 tracks/54/enabled = true
-tracks/54/path = NodePath("Enemies/Wave3_Enemy14/PathFollow2D/Enemy")
+tracks/54/path = NodePath("Enemies/Wave3_Enemy13/PathFollow2D/Enemy")
 tracks/54/interp = 1
 tracks/54/loop_wrap = true
 tracks/54/keys = {
-"times": PackedFloat32Array(38.5, 39.5),
+"times": PackedFloat32Array(38, 39),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1751,26 +2034,14 @@ tracks/55/keys = {
 "update": 0,
 "values": [0.0, 1.0]
 }
-tracks/56/type = "value"
+tracks/56/type = "method"
 tracks/56/imported = false
 tracks/56/enabled = true
-tracks/56/path = NodePath("Enemies/Wave4_Boss/PathFollow2D:progress")
+tracks/56/path = NodePath("Enemies/Wave3_Enemy14/PathFollow2D/Enemy")
 tracks/56/interp = 1
 tracks/56/loop_wrap = true
 tracks/56/keys = {
-"times": PackedFloat32Array(39.5, 40, 41, 44, 46, 48, 50, 52, 54, 55.6, 56),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 1100.0, 1250.0, 4044.1453, 4644.1426, 9105.538, 11027.611, 12994.645, 14578.165, 15778.18, 16978.172]
-}
-tracks/57/type = "method"
-tracks/57/imported = false
-tracks/57/enabled = true
-tracks/57/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Enemy")
-tracks/57/interp = 1
-tracks/57/loop_wrap = true
-tracks/57/keys = {
-"times": PackedFloat32Array(39.5, 56),
+"times": PackedFloat32Array(38.5, 39.5),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1780,26 +2051,38 @@ tracks/57/keys = {
 "method": &"queue_free"
 }]
 }
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1/Distance:position")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(40, 41),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(2000, 0), Vector2(300, 0)]
+}
 tracks/58/type = "value"
 tracks/58/imported = false
 tracks/58/enabled = true
-tracks/58/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D:progress_ratio")
+tracks/58/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1:rotation")
 tracks/58/interp = 1
 tracks/58/loop_wrap = true
 tracks/58/keys = {
-"times": PackedFloat32Array(56, 58),
+"times": PackedFloat32Array(40, 56),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.0, 50.26548245743669]
 }
 tracks/59/type = "method"
 tracks/59/imported = false
 tracks/59/enabled = true
-tracks/59/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D/Enemy")
+tracks/59/path = NodePath("Enemies/Wave4_Enemy1/Enemy")
 tracks/59/interp = 1
 tracks/59/loop_wrap = true
 tracks/59/keys = {
-"times": PackedFloat32Array(56, 58),
+"times": PackedFloat32Array(40, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1812,52 +2095,35 @@ tracks/59/keys = {
 tracks/60/type = "value"
 tracks/60/imported = false
 tracks/60/enabled = true
-tracks/60/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D:progress_ratio")
+tracks/60/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2/Distance:position")
 tracks/60/interp = 1
 tracks/60/loop_wrap = true
 tracks/60/keys = {
-"times": PackedFloat32Array(57, 59),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(40.333332, 41.333332),
+"transitions": PackedFloat32Array(0.1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [Vector2(2000, 0), Vector2(300, 0)]
 }
-tracks/61/type = "method"
+tracks/61/type = "value"
 tracks/61/imported = false
 tracks/61/enabled = true
-tracks/61/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D/Enemy")
+tracks/61/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2:rotation")
 tracks/61/interp = 1
 tracks/61/loop_wrap = true
 tracks/61/keys = {
-"times": PackedFloat32Array(57, 59),
+"times": PackedFloat32Array(40.333332, 56),
 "transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"activate"
-}, {
-"args": [],
-"method": &"queue_free"
-}]
+"update": 0,
+"values": [0.0, 49.21828490624009]
 }
-tracks/62/type = "value"
+tracks/62/type = "method"
 tracks/62/imported = false
 tracks/62/enabled = true
-tracks/62/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D:progress_ratio")
+tracks/62/path = NodePath("Enemies/Wave4_Enemy2/Enemy")
 tracks/62/interp = 1
 tracks/62/loop_wrap = true
 tracks/62/keys = {
-"times": PackedFloat32Array(58, 60),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/63/type = "method"
-tracks/63/imported = false
-tracks/63/enabled = true
-tracks/63/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D/Enemy")
-tracks/63/interp = 1
-tracks/63/loop_wrap = true
-tracks/63/keys = {
-"times": PackedFloat32Array(58, 60),
+"times": PackedFloat32Array(40.333332, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1866,27 +2132,39 @@ tracks/63/keys = {
 "args": [],
 "method": &"queue_free"
 }]
+}
+tracks/63/type = "value"
+tracks/63/imported = false
+tracks/63/enabled = true
+tracks/63/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3/Distance:position")
+tracks/63/interp = 1
+tracks/63/loop_wrap = true
+tracks/63/keys = {
+"times": PackedFloat32Array(40.666668, 41.666668),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(2000, 0), Vector2(300, 0)]
 }
 tracks/64/type = "value"
 tracks/64/imported = false
 tracks/64/enabled = true
-tracks/64/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D:progress_ratio")
+tracks/64/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3:rotation")
 tracks/64/interp = 1
 tracks/64/loop_wrap = true
 tracks/64/keys = {
-"times": PackedFloat32Array(59, 61),
+"times": PackedFloat32Array(40.666668, 56),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.0, 48.1710873550435]
 }
 tracks/65/type = "method"
 tracks/65/imported = false
 tracks/65/enabled = true
-tracks/65/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D/Enemy")
+tracks/65/path = NodePath("Enemies/Wave4_Enemy3/Enemy")
 tracks/65/interp = 1
 tracks/65/loop_wrap = true
 tracks/65/keys = {
-"times": PackedFloat32Array(59, 61),
+"times": PackedFloat32Array(40.666668, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1899,52 +2177,35 @@ tracks/65/keys = {
 tracks/66/type = "value"
 tracks/66/imported = false
 tracks/66/enabled = true
-tracks/66/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D:progress_ratio")
+tracks/66/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4/Distance:position")
 tracks/66/interp = 1
 tracks/66/loop_wrap = true
 tracks/66/keys = {
-"times": PackedFloat32Array(60, 62),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(41, 42),
+"transitions": PackedFloat32Array(0.1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [Vector2(2000, 0), Vector2(300, 0)]
 }
-tracks/67/type = "method"
+tracks/67/type = "value"
 tracks/67/imported = false
 tracks/67/enabled = true
-tracks/67/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D/Enemy")
+tracks/67/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4:rotation")
 tracks/67/interp = 1
 tracks/67/loop_wrap = true
 tracks/67/keys = {
-"times": PackedFloat32Array(60, 62),
+"times": PackedFloat32Array(41, 56),
 "transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"activate"
-}, {
-"args": [],
-"method": &"queue_free"
-}]
+"update": 0,
+"values": [0.0, 47.1238898038469]
 }
-tracks/68/type = "value"
+tracks/68/type = "method"
 tracks/68/imported = false
 tracks/68/enabled = true
-tracks/68/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D:progress_ratio")
+tracks/68/path = NodePath("Enemies/Wave4_Enemy4/Enemy")
 tracks/68/interp = 1
 tracks/68/loop_wrap = true
 tracks/68/keys = {
-"times": PackedFloat32Array(61, 63),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/69/type = "method"
-tracks/69/imported = false
-tracks/69/enabled = true
-tracks/69/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D/Enemy")
-tracks/69/interp = 1
-tracks/69/loop_wrap = true
-tracks/69/keys = {
-"times": PackedFloat32Array(61, 63),
+"times": PackedFloat32Array(41, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1953,27 +2214,39 @@ tracks/69/keys = {
 "args": [],
 "method": &"queue_free"
 }]
+}
+tracks/69/type = "value"
+tracks/69/imported = false
+tracks/69/enabled = true
+tracks/69/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5/Distance:position")
+tracks/69/interp = 1
+tracks/69/loop_wrap = true
+tracks/69/keys = {
+"times": PackedFloat32Array(41.333332, 42.333332),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(2000, 0), Vector2(300, 0)]
 }
 tracks/70/type = "value"
 tracks/70/imported = false
 tracks/70/enabled = true
-tracks/70/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D:progress_ratio")
+tracks/70/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5:rotation")
 tracks/70/interp = 1
 tracks/70/loop_wrap = true
 tracks/70/keys = {
-"times": PackedFloat32Array(62, 64),
+"times": PackedFloat32Array(41.333332, 56),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.0, 46.0766922526503]
 }
 tracks/71/type = "method"
 tracks/71/imported = false
 tracks/71/enabled = true
-tracks/71/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D/Enemy")
+tracks/71/path = NodePath("Enemies/Wave4_Enemy5/Enemy")
 tracks/71/interp = 1
 tracks/71/loop_wrap = true
 tracks/71/keys = {
-"times": PackedFloat32Array(62, 64),
+"times": PackedFloat32Array(41.333332, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -1986,23 +2259,35 @@ tracks/71/keys = {
 tracks/72/type = "value"
 tracks/72/imported = false
 tracks/72/enabled = true
-tracks/72/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D:progress_ratio")
+tracks/72/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6/Distance:position")
 tracks/72/interp = 1
 tracks/72/loop_wrap = true
 tracks/72/keys = {
-"times": PackedFloat32Array(63, 65),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(41.666668, 42.666668),
+"transitions": PackedFloat32Array(0.1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [Vector2(2000, 0), Vector2(300, 0)]
 }
-tracks/73/type = "method"
+tracks/73/type = "value"
 tracks/73/imported = false
 tracks/73/enabled = true
-tracks/73/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D/Enemy")
+tracks/73/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6:rotation")
 tracks/73/interp = 1
 tracks/73/loop_wrap = true
 tracks/73/keys = {
-"times": PackedFloat32Array(63, 65),
+"times": PackedFloat32Array(41.666668, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 45.0294947014537]
+}
+tracks/74/type = "method"
+tracks/74/imported = false
+tracks/74/enabled = true
+tracks/74/path = NodePath("Enemies/Wave4_Enemy6/Enemy")
+tracks/74/interp = 1
+tracks/74/loop_wrap = true
+tracks/74/keys = {
+"times": PackedFloat32Array(41.666668, 56),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -2012,17 +2297,512 @@ tracks/73/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/74/type = "value"
-tracks/74/imported = false
-tracks/74/enabled = true
-tracks/74/path = NodePath("Chat2:visible")
-tracks/74/interp = 1
-tracks/74/loop_wrap = true
-tracks/74/keys = {
-"times": PackedFloat32Array(66),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+tracks/75/type = "value"
+tracks/75/imported = false
+tracks/75/enabled = true
+tracks/75/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7/Distance:position")
+tracks/75/interp = 1
+tracks/75/loop_wrap = true
+tracks/75/keys = {
+"times": PackedFloat32Array(40.166668, 41.166668),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/76/type = "value"
+tracks/76/imported = false
+tracks/76/enabled = true
+tracks/76/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7:rotation")
+tracks/76/interp = 1
+tracks/76/loop_wrap = true
+tracks/76/keys = {
+"times": PackedFloat32Array(40.166668, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -49.741883681838395]
+}
+tracks/77/type = "method"
+tracks/77/imported = false
+tracks/77/enabled = true
+tracks/77/path = NodePath("Enemies/Wave4_Enemy7/Enemy")
+tracks/77/interp = 1
+tracks/77/loop_wrap = true
+tracks/77/keys = {
+"times": PackedFloat32Array(40.166668, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/78/type = "value"
+tracks/78/imported = false
+tracks/78/enabled = true
+tracks/78/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8/Distance:position")
+tracks/78/interp = 1
+tracks/78/loop_wrap = true
+tracks/78/keys = {
+"times": PackedFloat32Array(40.5, 41.5),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/79/type = "value"
+tracks/79/imported = false
+tracks/79/enabled = true
+tracks/79/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8:rotation")
+tracks/79/interp = 1
+tracks/79/loop_wrap = true
+tracks/79/keys = {
+"times": PackedFloat32Array(40.5, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -48.69468613064179]
+}
+tracks/80/type = "method"
+tracks/80/imported = false
+tracks/80/enabled = true
+tracks/80/path = NodePath("Enemies/Wave4_Enemy8/Enemy")
+tracks/80/interp = 1
+tracks/80/loop_wrap = true
+tracks/80/keys = {
+"times": PackedFloat32Array(40.5, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/81/type = "value"
+tracks/81/imported = false
+tracks/81/enabled = true
+tracks/81/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9/Distance:position")
+tracks/81/interp = 1
+tracks/81/loop_wrap = true
+tracks/81/keys = {
+"times": PackedFloat32Array(40.833332, 41.833332),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/82/type = "value"
+tracks/82/imported = false
+tracks/82/enabled = true
+tracks/82/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9:rotation")
+tracks/82/interp = 1
+tracks/82/loop_wrap = true
+tracks/82/keys = {
+"times": PackedFloat32Array(40.833332, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -47.647488579445195]
+}
+tracks/83/type = "method"
+tracks/83/imported = false
+tracks/83/enabled = true
+tracks/83/path = NodePath("Enemies/Wave4_Enemy9/Enemy")
+tracks/83/interp = 1
+tracks/83/loop_wrap = true
+tracks/83/keys = {
+"times": PackedFloat32Array(40.833332, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/84/type = "value"
+tracks/84/imported = false
+tracks/84/enabled = true
+tracks/84/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10/Distance:position")
+tracks/84/interp = 1
+tracks/84/loop_wrap = true
+tracks/84/keys = {
+"times": PackedFloat32Array(41.166668, 42.166668),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/85/type = "value"
+tracks/85/imported = false
+tracks/85/enabled = true
+tracks/85/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10:rotation")
+tracks/85/interp = 1
+tracks/85/loop_wrap = true
+tracks/85/keys = {
+"times": PackedFloat32Array(41.166668, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -46.6002910282486]
+}
+tracks/86/type = "method"
+tracks/86/imported = false
+tracks/86/enabled = true
+tracks/86/path = NodePath("Enemies/Wave4_Enemy10/Enemy")
+tracks/86/interp = 1
+tracks/86/loop_wrap = true
+tracks/86/keys = {
+"times": PackedFloat32Array(41.166668, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/87/type = "value"
+tracks/87/imported = false
+tracks/87/enabled = true
+tracks/87/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11/Distance:position")
+tracks/87/interp = 1
+tracks/87/loop_wrap = true
+tracks/87/keys = {
+"times": PackedFloat32Array(41.5, 42.5),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/88/type = "value"
+tracks/88/imported = false
+tracks/88/enabled = true
+tracks/88/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11:rotation")
+tracks/88/interp = 1
+tracks/88/loop_wrap = true
+tracks/88/keys = {
+"times": PackedFloat32Array(41.5, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -45.553093477052]
+}
+tracks/89/type = "method"
+tracks/89/imported = false
+tracks/89/enabled = true
+tracks/89/path = NodePath("Enemies/Wave4_Enemy11/Enemy")
+tracks/89/interp = 1
+tracks/89/loop_wrap = true
+tracks/89/keys = {
+"times": PackedFloat32Array(41.5, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/90/type = "value"
+tracks/90/imported = false
+tracks/90/enabled = true
+tracks/90/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12/Distance:position")
+tracks/90/interp = 1
+tracks/90/loop_wrap = true
+tracks/90/keys = {
+"times": PackedFloat32Array(41.833332, 42.833332),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(-2000, 0), Vector2(-200, 0)]
+}
+tracks/91/type = "value"
+tracks/91/imported = false
+tracks/91/enabled = true
+tracks/91/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12:rotation")
+tracks/91/interp = 1
+tracks/91/loop_wrap = true
+tracks/91/keys = {
+"times": PackedFloat32Array(41.833332, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -44.505895925855405]
+}
+tracks/92/type = "method"
+tracks/92/imported = false
+tracks/92/enabled = true
+tracks/92/path = NodePath("Enemies/Wave4_Enemy12/Enemy")
+tracks/92/interp = 1
+tracks/92/loop_wrap = true
+tracks/92/keys = {
+"times": PackedFloat32Array(41.833332, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/93/type = "value"
+tracks/93/imported = false
+tracks/93/enabled = true
+tracks/93/path = NodePath("Enemies/Wave4_Boss/PathFollow2D:progress")
+tracks/93/interp = 1
+tracks/93/loop_wrap = true
+tracks/93/keys = {
+"times": PackedFloat32Array(39.5, 40, 41, 44, 46, 48, 50, 52, 54, 55.6, 56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1100.0, 1250.0, 4044.1453, 4644.1426, 9105.538, 11027.611, 12994.645, 14578.165, 15778.18, 16978.172]
+}
+tracks/94/type = "method"
+tracks/94/imported = false
+tracks/94/enabled = true
+tracks/94/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Enemy")
+tracks/94/interp = 1
+tracks/94/loop_wrap = true
+tracks/94/keys = {
+"times": PackedFloat32Array(39.5, 56),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/95/type = "value"
+tracks/95/imported = false
+tracks/95/enabled = true
+tracks/95/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D:progress_ratio")
+tracks/95/interp = 1
+tracks/95/loop_wrap = true
+tracks/95/keys = {
+"times": PackedFloat32Array(56, 58),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/96/type = "method"
+tracks/96/imported = false
+tracks/96/enabled = true
+tracks/96/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D/Enemy")
+tracks/96/interp = 1
+tracks/96/loop_wrap = true
+tracks/96/keys = {
+"times": PackedFloat32Array(56, 58),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/97/type = "value"
+tracks/97/imported = false
+tracks/97/enabled = true
+tracks/97/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D:progress_ratio")
+tracks/97/interp = 1
+tracks/97/loop_wrap = true
+tracks/97/keys = {
+"times": PackedFloat32Array(57, 59),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/98/type = "method"
+tracks/98/imported = false
+tracks/98/enabled = true
+tracks/98/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D/Enemy")
+tracks/98/interp = 1
+tracks/98/loop_wrap = true
+tracks/98/keys = {
+"times": PackedFloat32Array(57, 59),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/99/type = "value"
+tracks/99/imported = false
+tracks/99/enabled = true
+tracks/99/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D:progress_ratio")
+tracks/99/interp = 1
+tracks/99/loop_wrap = true
+tracks/99/keys = {
+"times": PackedFloat32Array(58, 60),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/100/type = "method"
+tracks/100/imported = false
+tracks/100/enabled = true
+tracks/100/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D/Enemy")
+tracks/100/interp = 1
+tracks/100/loop_wrap = true
+tracks/100/keys = {
+"times": PackedFloat32Array(58, 60),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/101/type = "value"
+tracks/101/imported = false
+tracks/101/enabled = true
+tracks/101/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D:progress_ratio")
+tracks/101/interp = 1
+tracks/101/loop_wrap = true
+tracks/101/keys = {
+"times": PackedFloat32Array(59, 61),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/102/type = "method"
+tracks/102/imported = false
+tracks/102/enabled = true
+tracks/102/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D/Enemy")
+tracks/102/interp = 1
+tracks/102/loop_wrap = true
+tracks/102/keys = {
+"times": PackedFloat32Array(59, 61),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/103/type = "value"
+tracks/103/imported = false
+tracks/103/enabled = true
+tracks/103/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D:progress_ratio")
+tracks/103/interp = 1
+tracks/103/loop_wrap = true
+tracks/103/keys = {
+"times": PackedFloat32Array(60, 62),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/104/type = "method"
+tracks/104/imported = false
+tracks/104/enabled = true
+tracks/104/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D/Enemy")
+tracks/104/interp = 1
+tracks/104/loop_wrap = true
+tracks/104/keys = {
+"times": PackedFloat32Array(60, 62),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/105/type = "value"
+tracks/105/imported = false
+tracks/105/enabled = true
+tracks/105/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D:progress_ratio")
+tracks/105/interp = 1
+tracks/105/loop_wrap = true
+tracks/105/keys = {
+"times": PackedFloat32Array(61, 63),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/106/type = "method"
+tracks/106/imported = false
+tracks/106/enabled = true
+tracks/106/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D/Enemy")
+tracks/106/interp = 1
+tracks/106/loop_wrap = true
+tracks/106/keys = {
+"times": PackedFloat32Array(61, 63),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/107/type = "value"
+tracks/107/imported = false
+tracks/107/enabled = true
+tracks/107/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D:progress_ratio")
+tracks/107/interp = 1
+tracks/107/loop_wrap = true
+tracks/107/keys = {
+"times": PackedFloat32Array(62, 64),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/108/type = "method"
+tracks/108/imported = false
+tracks/108/enabled = true
+tracks/108/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D/Enemy")
+tracks/108/interp = 1
+tracks/108/loop_wrap = true
+tracks/108/keys = {
+"times": PackedFloat32Array(62, 64),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/109/type = "value"
+tracks/109/imported = false
+tracks/109/enabled = true
+tracks/109/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D:progress_ratio")
+tracks/109/interp = 1
+tracks/109/loop_wrap = true
+tracks/109/keys = {
+"times": PackedFloat32Array(63, 65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/110/type = "method"
+tracks/110/imported = false
+tracks/110/enabled = true
+tracks/110/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D/Enemy")
+tracks/110/interp = 1
+tracks/110/loop_wrap = true
+tracks/110/keys = {
+"times": PackedFloat32Array(63, 65),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
@@ -2204,6 +2984,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_5vw27")
 
 [node name="Wave2_Enemy2" type="Path2D" parent="Enemies" unique_id=791319372]
+position = Vector2(1468.1865, 108.78134)
 curve = SubResource("Curve2D_1u8w0")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave2_Enemy2" unique_id=1883733300]
@@ -2873,6 +3654,426 @@ shape = SubResource("CircleShape2D_7mycd")
 rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=144898455]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_EnemyPath1" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=431145496]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1" unique_id=160140321]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath1/Distance" unique_id=1191209595]
+remote_path = NodePath("../../../../../Wave4_Enemy1")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath2" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1531282963]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2" unique_id=819317227]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath2/Distance" unique_id=1973259431]
+remote_path = NodePath("../../../../../Wave4_Enemy2")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath3" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1779025750]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3" unique_id=907229924]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath3/Distance" unique_id=18421611]
+remote_path = NodePath("../../../../../Wave4_Enemy3")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath4" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=653802840]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4" unique_id=945190455]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath4/Distance" unique_id=281967452]
+remote_path = NodePath("../../../../../Wave4_Enemy4")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath5" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=752206427]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5" unique_id=901786506]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath5/Distance" unique_id=626290310]
+remote_path = NodePath("../../../../../Wave4_Enemy5")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath6" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1323817063]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6" unique_id=1064549778]
+position = Vector2(2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath6/Distance" unique_id=1906106288]
+remote_path = NodePath("../../../../../Wave4_Enemy6")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath7" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=239746076]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7" unique_id=576376442]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath7/Distance" unique_id=1861151229]
+remote_path = NodePath("../../../../../Wave4_Enemy7")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath8" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1716677440]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8" unique_id=659573478]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath8/Distance" unique_id=1216214362]
+remote_path = NodePath("../../../../../Wave4_Enemy8")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath9" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1309982980]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9" unique_id=724927942]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath9/Distance" unique_id=476683314]
+remote_path = NodePath("../../../../../Wave4_Enemy9")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath10" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1611676857]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10" unique_id=1226404323]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath10/Distance" unique_id=1843406270]
+remote_path = NodePath("../../../../../Wave4_Enemy10")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath11" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=97704337]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11" unique_id=629152334]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath11/Distance" unique_id=695349230]
+remote_path = NodePath("../../../../../Wave4_Enemy11")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_EnemyPath12" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=234315422]
+
+[node name="Distance" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12" unique_id=691292635]
+position = Vector2(-2000, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Enemies/Wave4_Boss/PathFollow2D/Wave4_EnemyPath12/Distance" unique_id=1912309847]
+remote_path = NodePath("../../../../../Wave4_Enemy12")
+update_rotation = false
+update_scale = false
+
+[node name="Wave4_Enemy1" type="Node2D" parent="Enemies" unique_id=613152098]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy1" unique_id=650906956]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy1/Enemy" unique_id=456812457]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy1/Enemy/Area2D" unique_id=200895328]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy1/Enemy" unique_id=1776812598]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy1/Enemy" unique_id=976548392]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy2" type="Node2D" parent="Enemies" unique_id=1581451216]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy2" unique_id=648783578]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy2/Enemy" unique_id=1025395808]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy2/Enemy/Area2D" unique_id=136849459]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy2/Enemy" unique_id=1032612419]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy2/Enemy" unique_id=35377822]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy3" type="Node2D" parent="Enemies" unique_id=2106497007]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy3" unique_id=434023239]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy3/Enemy" unique_id=1976285315]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy3/Enemy/Area2D" unique_id=134633374]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy3/Enemy" unique_id=1180063978]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy3/Enemy" unique_id=794637432]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy4" type="Node2D" parent="Enemies" unique_id=1611542686]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy4" unique_id=1650340025]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy4/Enemy" unique_id=176171998]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy4/Enemy/Area2D" unique_id=249613279]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy4/Enemy" unique_id=492629712]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy4/Enemy" unique_id=548792954]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy5" type="Node2D" parent="Enemies" unique_id=70346590]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy5" unique_id=1116851510]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy5/Enemy" unique_id=1261127229]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy5/Enemy/Area2D" unique_id=466245501]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy5/Enemy" unique_id=1388316727]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy5/Enemy" unique_id=1530934565]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy6" type="Node2D" parent="Enemies" unique_id=826846713]
+position = Vector2(2960, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy6" unique_id=688007785]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy6/Enemy" unique_id=695540184]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy6/Enemy/Area2D" unique_id=491496416]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy6/Enemy" unique_id=1701385126]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy6/Enemy" unique_id=1934600286]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy7" type="Node2D" parent="Enemies" unique_id=1381243630]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy7" unique_id=564080962]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy7/Enemy" unique_id=1887660293]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy7/Enemy/Area2D" unique_id=1549249170]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy7/Enemy" unique_id=545596031]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy7/Enemy" unique_id=1848831679]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy8" type="Node2D" parent="Enemies" unique_id=1443049570]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy8" unique_id=1956948417]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy8/Enemy" unique_id=264907228]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy8/Enemy/Area2D" unique_id=1519125301]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy8/Enemy" unique_id=1491186905]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy8/Enemy" unique_id=1226748415]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy9" type="Node2D" parent="Enemies" unique_id=994586220]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy9" unique_id=1790499797]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy9/Enemy" unique_id=263217884]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy9/Enemy/Area2D" unique_id=1669063792]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy9/Enemy" unique_id=1265986150]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy9/Enemy" unique_id=193703665]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy10" type="Node2D" parent="Enemies" unique_id=1969495104]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy10" unique_id=543064227]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy10/Enemy" unique_id=1928020959]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy10/Enemy/Area2D" unique_id=475236629]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy10/Enemy" unique_id=1179893658]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy10/Enemy" unique_id=864585104]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy11" type="Node2D" parent="Enemies" unique_id=58456285]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy11" unique_id=2049469398]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy11/Enemy" unique_id=1679500097]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy11/Enemy/Area2D" unique_id=728374971]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy11/Enemy" unique_id=1301200904]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy11/Enemy" unique_id=120174255]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Enemy12" type="Node2D" parent="Enemies" unique_id=621429766]
+position = Vector2(-1040, -400)
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy12" unique_id=565816046]
+process_mode = 4
+visible = false
+script = ExtResource("4_lquwl")
+health = 4
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Enemy12/Enemy" unique_id=196607511]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Enemy12/Enemy/Area2D" unique_id=1661253047]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Enemy12/Enemy" unique_id=2119607375]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy12/Enemy" unique_id=1852408315]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_5vw27")
 
