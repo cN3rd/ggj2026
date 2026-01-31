@@ -1,14 +1,26 @@
 [gd_scene format=3 uid="uid://cjutvbdujaeol"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_awion"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_3ldfn"]
-[ext_resource type="Shader" uid="uid://cekjb0n8x5hqg" path="res://shaders/axis_align.gdshader" id="3_f4qg3"]
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="2_3ldfn"]
+[ext_resource type="Texture2D" uid="uid://bc3k83gonfswb" path="res://art/spritesheets/Retro Impact Effect Pack 3 A.png" id="3_f4qg3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
-radius = 50.0
+radius = 24.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_w34ps"]
-shader = ExtResource("3_f4qg3")
+[sub_resource type="AtlasTexture" id="AtlasTexture_w34ps"]
+atlas = ExtResource("3_f4qg3")
+region = Rect2(96, 576, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5isyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w34ps")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Shot" type="Node2D" unique_id=143353712]
 script = ExtResource("1_awion")
@@ -20,7 +32,7 @@ damage = 10
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=513096179]
 shape = SubResource("CircleShape2D_1bvp3")
 
-[node name="Polygon2D" type="Polygon2D" parent="Area2D" unique_id=1915473033]
-material = SubResource("ShaderMaterial_w34ps")
-polygon = PackedVector2Array(-46.34851, 1.321929, -14.339403, -18.07753, 43.85897, -15.6525955, 39.009106, 4.716835, 12.819838, 21.69136)
-uv = PackedVector2Array(-85, -13, -19, -53, 101, -48, 91, -6, 37, 29)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=415579364]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_5isyo")
+frame_progress = 1.0
