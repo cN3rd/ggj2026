@@ -5,6 +5,10 @@
 [ext_resource type="AudioStream" uid="uid://c3nnl5dlywvk1" path="res://sound/menu music.wav" id="2_ouk20"]
 [ext_resource type="Texture2D" uid="uid://dduwrat2uxl2e" path="res://art/ui/main-menu/MenuItems.png" id="2_ytr4m"]
 [ext_resource type="Texture2D" uid="uid://donmoefbnqoie" path="res://art/ui/main-menu/Menu-triangle.png" id="4_l48gv"]
+[ext_resource type="Texture2D" uid="uid://btc4j42vse8lu" path="res://art/ui/main-menu/BG-Blurred.png" id="6_nrnbx"]
+[ext_resource type="Texture2D" uid="uid://c67j24nvptaow" path="res://art/ui/credits/Layer 6 copy.png" id="7_iqepy"]
+[ext_resource type="Texture2D" uid="uid://ccunbubpht5vl" path="res://art/ui/lose-screen/backButton.png" id="8_h1wq0"]
+[ext_resource type="Texture2D" uid="uid://cht2usggp8a4r" path="res://art/ui/lose-screen/backButtonHover.png" id="9_dwrpx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4hy44"]
 load_path = "res://.godot/imported/BG.png-ea5751d8e054b57d84219534dd3299d3.ctex"
@@ -14,14 +18,80 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/path = NodePath("Sprite2D2:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(821, 772)]
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D2/TextureButton:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_nrnbx"]
+resource_name = "credits-in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D2/TextureButton:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_iqepy"]
+resource_name = "credits-out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D2/TextureButton:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_mae5d"]
@@ -72,6 +142,8 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ytr4m"]
 _data = {
 &"RESET": SubResource("Animation_ouk20"),
+&"credits-in": SubResource("Animation_nrnbx"),
+&"credits-out": SubResource("Animation_iqepy"),
 &"select_1": SubResource("Animation_mae5d"),
 &"select_2": SubResource("Animation_4hy44"),
 &"select_3": SubResource("Animation_ecwwl")
@@ -96,6 +168,27 @@ texture = ExtResource("2_mae5d")
 position = Vector2(821, 772)
 texture = ExtResource("4_l48gv")
 
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1978296417]
+modulate = Color(1, 1, 1, 0)
+
+[node name="BG" type="Sprite2D" parent="Sprite2D2" unique_id=60856655]
+texture = ExtResource("6_nrnbx")
+centered = false
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D2" unique_id=1013800306]
+texture = ExtResource("7_iqepy")
+offset = Vector2(872, 540)
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D2" unique_id=1914402236]
+offset_left = 764.0
+offset_top = 872.0
+offset_right = 1153.0
+offset_bottom = 982.0
+texture_normal = ExtResource("8_h1wq0")
+texture_pressed = ExtResource("8_h1wq0")
+texture_hover = ExtResource("9_dwrpx")
+texture_focused = ExtResource("8_h1wq0")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1498458690]
 libraries/ = SubResource("AnimationLibrary_ytr4m")
 autoplay = &"select_1"
@@ -103,3 +196,5 @@ autoplay = &"select_1"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874078153]
 stream = ExtResource("2_ouk20")
 autoplay = true
+
+[connection signal="pressed" from="Sprite2D2/TextureButton" to="." method="_on_return_btn_pressed"]
