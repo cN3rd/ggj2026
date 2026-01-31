@@ -29,6 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://cw8oqvhnwao0i" path="res://art/sprites-enemies/kabuki-fullblue-pixelated.png" id="24_kq58d"]
 [ext_resource type="Texture2D" uid="uid://b4tsrt67ghdbo" path="res://art/sprites-enemies/kitsune-pixelated.png" id="25_seu75"]
 [ext_resource type="Texture2D" uid="uid://o0s3td04lwwq" path="res://art/sprites-enemies/shishiguchi-pixelated.png" id="26_htxhm"]
+[ext_resource type="PackedScene" uid="uid://cg5d2y6qsxrux" path="res://patterns/rain_shot.tscn" id="26_jq2sk"]
 [ext_resource type="Texture2D" uid="uid://ds8gp77giihtf" path="res://art/sprites-enemies/kappa-pixelated.png" id="28_seu75"]
 [ext_resource type="PackedScene" uid="uid://cobvui7qydeh7" path="res://patterns/fanhome_ltr.tscn" id="29_htxhm"]
 [ext_resource type="PackedScene" uid="uid://dxakey3j3jjoi" path="res://patterns/fanhome_rtl.tscn" id="30_jq2sk"]
@@ -2000,11 +2001,14 @@ tracks/38/path = NodePath("Enemies/Wave3_Enemy1/PathFollow2D/Enemy")
 tracks/38/interp = 1
 tracks/38/loop_wrap = true
 tracks/38/keys = {
-"times": PackedFloat32Array(32, 33),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(32, 32.5, 33),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2029,11 +2033,14 @@ tracks/40/path = NodePath("Enemies/Wave3_Enemy2/PathFollow2D/Enemy")
 tracks/40/interp = 1
 tracks/40/loop_wrap = true
 tracks/40/keys = {
-"times": PackedFloat32Array(32.5, 33.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(32.5, 33, 33.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2058,11 +2065,14 @@ tracks/42/path = NodePath("Enemies/Wave3_Enemy3/PathFollow2D/Enemy")
 tracks/42/interp = 1
 tracks/42/loop_wrap = true
 tracks/42/keys = {
-"times": PackedFloat32Array(33, 34),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(33, 33.5, 34),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2087,11 +2097,14 @@ tracks/44/path = NodePath("Enemies/Wave3_Enemy4/PathFollow2D/Enemy")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/keys = {
-"times": PackedFloat32Array(33.5, 34.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(33.5, 34, 34.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2116,11 +2129,14 @@ tracks/46/path = NodePath("Enemies/Wave3_Enemy5/PathFollow2D/Enemy")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
-"times": PackedFloat32Array(34, 35),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(34, 34.5, 35),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2145,11 +2161,14 @@ tracks/48/path = NodePath("Enemies/Wave3_Enemy6/PathFollow2D/Enemy")
 tracks/48/interp = 1
 tracks/48/loop_wrap = true
 tracks/48/keys = {
-"times": PackedFloat32Array(34.5, 35.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(34.5, 35, 35.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2174,11 +2193,14 @@ tracks/50/path = NodePath("Enemies/Wave3_Enemy7/PathFollow2D/Enemy")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/keys = {
-"times": PackedFloat32Array(35, 36),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(35, 35.5, 36),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2203,11 +2225,14 @@ tracks/52/path = NodePath("Enemies/Wave3_Enemy8/PathFollow2D/Enemy")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = {
-"times": PackedFloat32Array(35.5, 36.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(35.5, 36, 36.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2232,11 +2257,14 @@ tracks/54/path = NodePath("Enemies/Wave3_Enemy9/PathFollow2D/Enemy")
 tracks/54/interp = 1
 tracks/54/loop_wrap = true
 tracks/54/keys = {
-"times": PackedFloat32Array(36, 37),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(36, 36.5, 37),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2261,11 +2289,14 @@ tracks/56/path = NodePath("Enemies/Wave3_Enemy10/PathFollow2D/Enemy")
 tracks/56/interp = 1
 tracks/56/loop_wrap = true
 tracks/56/keys = {
-"times": PackedFloat32Array(36.5, 37.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(36.5, 37, 37.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2290,11 +2321,14 @@ tracks/58/path = NodePath("Enemies/Wave3_Enemy11/PathFollow2D/Enemy")
 tracks/58/interp = 1
 tracks/58/loop_wrap = true
 tracks/58/keys = {
-"times": PackedFloat32Array(37, 38),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(37, 37.5, 38),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2319,11 +2353,14 @@ tracks/60/path = NodePath("Enemies/Wave3_Enemy12/PathFollow2D/Enemy")
 tracks/60/interp = 1
 tracks/60/loop_wrap = true
 tracks/60/keys = {
-"times": PackedFloat32Array(37.5, 38.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(37.5, 38, 38.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2348,11 +2385,14 @@ tracks/62/path = NodePath("Enemies/Wave3_Enemy13/PathFollow2D/Enemy")
 tracks/62/interp = 1
 tracks/62/loop_wrap = true
 tracks/62/keys = {
-"times": PackedFloat32Array(38, 39),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(38, 38.5, 39),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -2377,11 +2417,14 @@ tracks/64/path = NodePath("Enemies/Wave3_Enemy14/PathFollow2D/Enemy")
 tracks/64/interp = 1
 tracks/64/loop_wrap = true
 tracks/64/keys = {
-"times": PackedFloat32Array(38.5, 39.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(38.5, 39, 39.5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -3525,7 +3568,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy1/PathFollow2D/Enemy" unique_id=811683223]
 collision_layer = 2
@@ -3553,7 +3597,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy2/PathFollow2D/Enemy" unique_id=1329041140]
 collision_layer = 2
@@ -3581,7 +3626,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy3/PathFollow2D/Enemy" unique_id=515198377]
 collision_layer = 2
@@ -3609,7 +3655,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy4/PathFollow2D/Enemy" unique_id=1447180740]
 collision_layer = 2
@@ -3637,7 +3684,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy5/PathFollow2D/Enemy" unique_id=722383830]
 collision_layer = 2
@@ -3665,7 +3713,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy6/PathFollow2D/Enemy" unique_id=145811112]
 collision_layer = 2
@@ -3693,7 +3742,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy7/PathFollow2D/Enemy" unique_id=475670831]
 collision_layer = 2
@@ -3721,7 +3771,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy8/PathFollow2D/Enemy" unique_id=1638781583]
 collision_layer = 2
@@ -3749,7 +3800,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy9/PathFollow2D/Enemy" unique_id=195686267]
 collision_layer = 2
@@ -3777,7 +3829,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy10/PathFollow2D/Enemy" unique_id=1701979087]
 collision_layer = 2
@@ -3805,7 +3858,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy11/PathFollow2D/Enemy" unique_id=276168922]
 collision_layer = 2
@@ -3833,7 +3887,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy12/PathFollow2D/Enemy" unique_id=1089640577]
 collision_layer = 2
@@ -3861,7 +3916,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy13/PathFollow2D/Enemy" unique_id=27039083]
 collision_layer = 2
@@ -3889,7 +3945,8 @@ visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("26_jq2sk")
+homing = true
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave3_Enemy14/PathFollow2D/Enemy" unique_id=1593211134]
 collision_layer = 2

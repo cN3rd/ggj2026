@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cg5d2y6qsxrux"]
+
+[ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_s7yf1"]
+[ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="2_d8b4r"]
+[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_opooi"]
+[ext_resource type="Shader" uid="uid://cekjb0n8x5hqg" path="res://shaders/axis_align.gdshader" id="4_1nlqm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w34ps"]
+shader = ExtResource("4_1nlqm")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
+radius = 50.0
+
+[sub_resource type="Animation" id="Animation_1bvp3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_h2yge"]
+resource_name = "shot_movement"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 3000)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(12),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Shot")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.0333333, 2),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1bvp3"]
+_data = {
+&"RESET": SubResource("Animation_1bvp3"),
+&"shot_movement": SubResource("Animation_h2yge")
+}
+
+[node name="rain_shot" type="Node2D" unique_id=1341587783]
+
+[node name="Shot" type="Node2D" parent="." unique_id=143353712]
+script = ExtResource("1_s7yf1")
+explosion = ExtResource("2_opooi")
+shot = ExtResource("2_d8b4r")
+homing = true
+shot_mode = "emit"
+shoot_after_impact = true
+damage = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="Shot" unique_id=1915473033]
+material = SubResource("ShaderMaterial_w34ps")
+polygon = PackedVector2Array(-46.34851, 1.321929, -14.339403, -18.07753, 43.85897, -15.6525955, 39.009106, 4.716835, 12.819838, 21.69136)
+uv = PackedVector2Array(-85, -13, -19, -53, 101, -48, 91, -6, 37, 29)
+
+[node name="Area2D" type="Area2D" parent="Shot" unique_id=1833640360]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shot/Area2D" unique_id=513096179]
+shape = SubResource("CircleShape2D_1bvp3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948720595]
+libraries/ = SubResource("AnimationLibrary_1bvp3")
+autoplay = &"shot_movement"
