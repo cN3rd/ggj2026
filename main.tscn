@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://dieqi2tlsh0ti" path="res://patterns/fireworks.tscn" id="29_4k2k6"]
 [ext_resource type="PackedScene" uid="uid://cobvui7qydeh7" path="res://patterns/fanhome_ltr.tscn" id="29_htxhm"]
 [ext_resource type="PackedScene" uid="uid://dxakey3j3jjoi" path="res://patterns/fanhome_rtl.tscn" id="30_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://boqijwri4k4m1" path="res://art/ui/text.png" id="31_0rl1p"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
 animations = [{
@@ -378,6 +379,50 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, -1200, 220, 1300, 0, -1200, 0, 0, 1320, 1300)
 }
 point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok6jj"]
+atlas = ExtResource("31_0rl1p")
+region = Rect2(0, 0, 1871, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_facbu"]
+atlas = ExtResource("31_0rl1p")
+region = Rect2(0, 121, 1871, 101)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b1qrp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok6jj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_facbu")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.4
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_come4"]
+atlas = ExtResource("31_0rl1p")
+region = Rect2(0, 242, 1871, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8e4i"]
+atlas = ExtResource("31_0rl1p")
+region = Rect2(0, 363, 1871, 101)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4lmeg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_come4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8e4i")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.4
+}]
 
 [sub_resource type="Animation" id="Animation_lquwl"]
 length = 0.001
@@ -1256,6 +1301,30 @@ tracks/72/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("7_272bh")]
+}
+tracks/73/type = "value"
+tracks/73/imported = false
+tracks/73/enabled = true
+tracks/73/path = NodePath("Chat1/Chat1-Anim:frame")
+tracks/73/interp = 1
+tracks/73/loop_wrap = true
+tracks/73/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/74/type = "value"
+tracks/74/imported = false
+tracks/74/enabled = true
+tracks/74/path = NodePath("Chat2/Chat2-Anim:frame")
+tracks/74/interp = 1
+tracks/74/loop_wrap = true
+tracks/74/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_7mycd"]
@@ -3304,6 +3373,30 @@ tracks/118/keys = {
 "method": &"queue_free"
 }]
 }
+tracks/119/type = "value"
+tracks/119/imported = false
+tracks/119/enabled = true
+tracks/119/path = NodePath("Chat1/Chat1-Anim:frame")
+tracks/119/interp = 1
+tracks/119/loop_wrap = true
+tracks/119/keys = {
+"times": PackedFloat32Array(14.9, 17.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/120/type = "value"
+tracks/120/imported = false
+tracks/120/enabled = true
+tracks/120/path = NodePath("Chat2/Chat2-Anim:frame")
+tracks/120/interp = 1
+tracks/120/loop_wrap = true
+tracks/120/keys = {
+"times": PackedFloat32Array(66, 69.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
 _data = {
@@ -4232,7 +4325,7 @@ update_rotation = false
 update_scale = false
 
 [node name="Wave4_Enemy1" type="Node2D" parent="Enemies" unique_id=613152098]
-position = Vector2(960.00134, 499.9995)
+position = Vector2(1260, -399.99957)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy1" unique_id=650906956]
 process_mode = 4
@@ -4254,7 +4347,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy2" type="Node2D" parent="Enemies" unique_id=1581451216]
-position = Vector2(700.1928, 649.9988)
+position = Vector2(1109.9999, -659.8077)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy2" unique_id=648783578]
 process_mode = 4
@@ -4276,7 +4369,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy3" type="Node2D" parent="Enemies" unique_id=2106497007]
-position = Vector2(700.19165, 949.9982)
+position = Vector2(810.0005, -659.80786)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy3" unique_id=434023239]
 process_mode = 4
@@ -4298,7 +4391,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy4" type="Node2D" parent="Enemies" unique_id=1611542686]
-position = Vector2(959.999, 1099.9995)
+position = Vector2(660, -400.00003)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy4" unique_id=1650340025]
 process_mode = 4
@@ -4320,7 +4413,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy5" type="Node2D" parent="Enemies" unique_id=70346590]
-position = Vector2(1219.8069, 950.0009)
+position = Vector2(810.0004, -140.19214)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy5" unique_id=1116851510]
 process_mode = 4
@@ -4342,7 +4435,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy6" type="Node2D" parent="Enemies" unique_id=826846713]
-position = Vector2(1219.8081, 650.0005)
+position = Vector2(1109.9999, -140.19229)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy6" unique_id=688007785]
 process_mode = 4
@@ -4364,7 +4457,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy7" type="Node2D" parent="Enemies" unique_id=1381243630]
-position = Vector2(1059.9996, 626.79425)
+position = Vector2(786.79504, -500.00024)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy7" unique_id=564080962]
 process_mode = 4
@@ -4386,7 +4479,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy8" type="Node2D" parent="Enemies" unique_id=1443049570]
-position = Vector2(1160, 799.9987)
+position = Vector2(959.9999, -600)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy8" unique_id=1956948417]
 process_mode = 4
@@ -4408,7 +4501,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy9" type="Node2D" parent="Enemies" unique_id=994586220]
-position = Vector2(1060.0004, 973.20435)
+position = Vector2(1133.2052, -499.99985)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy9" unique_id=1790499797]
 process_mode = 4
@@ -4430,7 +4523,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy10" type="Node2D" parent="Enemies" unique_id=1969495104]
-position = Vector2(860.00073, 973.205)
+position = Vector2(1133.2052, -300.0002)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy10" unique_id=543064227]
 process_mode = 4
@@ -4452,7 +4545,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy11" type="Node2D" parent="Enemies" unique_id=58456285]
-position = Vector2(760, 800.00006)
+position = Vector2(959.9999, -200)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy11" unique_id=2049469398]
 process_mode = 4
@@ -4474,7 +4567,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy12" type="Node2D" parent="Enemies" unique_id=621429766]
-position = Vector2(859.9998, 626.79456)
+position = Vector2(786.79504, -299.99973)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy12" unique_id=565816046]
 process_mode = 4
@@ -4723,13 +4816,20 @@ texture = ExtResource("28_seu75")
 
 [node name="explosion_layer" type="Node2D" parent="." unique_id=1806628524 groups=["explosion_layer"]]
 
-[node name="Chat1" type="Polygon2D" parent="." unique_id=1725810532]
+[node name="Chat1" type="Node2D" parent="." unique_id=1986980488]
 visible = false
-polygon = PackedVector2Array(184, 829, 1693, 837, 1688, 1031, 192, 1037)
 
-[node name="Chat2" type="Polygon2D" parent="." unique_id=572852004]
+[node name="Chat1-Anim" type="AnimatedSprite2D" parent="Chat1" unique_id=1553073410]
+position = Vector2(994, 882)
+sprite_frames = SubResource("SpriteFrames_b1qrp")
+
+[node name="Chat2" type="Node2D" parent="." unique_id=1220540225]
 visible = false
-polygon = PackedVector2Array(184, 829, 1693, 837, 1688, 1031, 192, 1037)
+
+[node name="Chat2-Anim" type="AnimatedSprite2D" parent="Chat2" unique_id=1162870544]
+position = Vector2(994, 882)
+sprite_frames = SubResource("SpriteFrames_4lmeg")
+autoplay = "default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=796814369]
 libraries/ = SubResource("AnimationLibrary_272bh")

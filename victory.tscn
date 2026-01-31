@@ -31,3 +31,5 @@ texture_normal = ExtResource("5_msd2c")
 texture_pressed = ExtResource("5_msd2c")
 texture_hover = ExtResource("6_ebtt0")
 texture_focused = ExtResource("5_msd2c")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_lose_button_pressed"]
