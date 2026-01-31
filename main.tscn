@@ -3281,13 +3281,14 @@ position = Vector2(292, -145)
 rotates = false
 loop = false
 
-[node name="Enemy" type="Node2D" parent="Enemies/Wave1_Enemy1/PathFollow2D" unique_id=1007943156]
+[node name="Enemy" type="Node2D" parent="Enemies/Wave1_Enemy1/PathFollow2D" unique_id=1007943156 node_paths=PackedStringArray("aim_at")]
 process_mode = 4
 visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
 shot = ExtResource("3_h2yge")
+aim_at = NodePath("Aim/Forward")
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave1_Enemy1/PathFollow2D/Enemy" unique_id=1099447308]
 collision_layer = 2
@@ -3314,13 +3315,14 @@ position = Vector2(1628, -145)
 rotates = false
 loop = false
 
-[node name="Enemy" type="Node2D" parent="Enemies/Wave1_Enemy2/PathFollow2D" unique_id=245590658]
+[node name="Enemy" type="Node2D" parent="Enemies/Wave1_Enemy2/PathFollow2D" unique_id=245590658 node_paths=PackedStringArray("aim_at")]
 process_mode = 4
 visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
 shot = ExtResource("3_h2yge")
+aim_at = NodePath("Aim/Forward")
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave1_Enemy2/PathFollow2D/Enemy" unique_id=30711302]
 collision_layer = 2
