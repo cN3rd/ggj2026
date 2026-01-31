@@ -86,3 +86,7 @@ attack={
 
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Enemy"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

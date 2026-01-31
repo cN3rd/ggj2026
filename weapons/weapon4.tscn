@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://db6oms5y1q174"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_li53o"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_2i2yq"]
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="2_2i2yq"]
+[ext_resource type="PackedScene" uid="uid://b047cwp6xncks" path="res://weapons/player_shot.tscn" id="3_ydm2m"]
 
 [sub_resource type="Curve2D" id="Curve2D_li53o"]
 _data = {
@@ -139,10 +140,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=113801648]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=1673005602]
-color = Color(1, 0, 1, 1)
-polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
-uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
+[node name="PlayerShot" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=380250393 instance=ExtResource("3_ydm2m")]
 
 [node name="ShotPath2" type="Path2D" parent="." unique_id=1247490279]
 curve = SubResource("Curve2D_2i2yq")
@@ -164,10 +162,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1043723297]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1116562549]
-color = Color(1, 0, 1, 1)
-polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
-uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
+[node name="PlayerShot" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=675678291 instance=ExtResource("3_ydm2m")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1204386962]
 libraries/ = SubResource("AnimationLibrary_ndfm1")

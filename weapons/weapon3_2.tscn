@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://x780v06384un"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_ghc6u"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_lgdow"]
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="2_lgdow"]
+[ext_resource type="PackedScene" uid="uid://b047cwp6xncks" path="res://weapons/player_shot.tscn" id="3_cga2f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dit84"]
 radius = 20.0
@@ -70,10 +71,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shot/Area2D" unique_id=113801648]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="Shot/Area2D" unique_id=1673005602]
-color = Color(1, 0, 1, 1)
-polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
-uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
+[node name="PlayerShot" parent="Shot/Area2D" unique_id=380250393 instance=ExtResource("3_cga2f")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1204386962]
 libraries/ = SubResource("AnimationLibrary_ndfm1")

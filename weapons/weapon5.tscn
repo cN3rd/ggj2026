@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://gxbw8yj71uqw"]
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_clbna"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_kmhmm"]
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="2_kmhmm"]
+[ext_resource type="PackedScene" uid="uid://b047cwp6xncks" path="res://weapons/player_shot.tscn" id="3_kmhmm"]
 
 [sub_resource type="Curve2D" id="Curve2D_li53o"]
 _data = {
@@ -125,7 +126,7 @@ curve = SubResource("Curve2D_li53o")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="ShotPath1" unique_id=417994309]
 position = Vector2(-100, -2000.0002)
-progress = 3285.4165
+progress = 3265.002
 rotates = false
 loop = false
 
@@ -141,17 +142,14 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=113801648]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=1673005602]
-color = Color(1, 0, 1, 1)
-polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
-uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
+[node name="PlayerShot" parent="ShotPath1/PathFollow2D/Shot/Area2D" unique_id=380250393 instance=ExtResource("3_kmhmm")]
 
 [node name="ShotPath2" type="Path2D" parent="." unique_id=1247490279]
 curve = SubResource("Curve2D_clbna")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="ShotPath2" unique_id=2122959339]
 position = Vector2(100, -2000.0002)
-progress = 3285.4165
+progress = 3265.002
 rotates = false
 loop = false
 
@@ -167,10 +165,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1043723297]
 shape = SubResource("CircleShape2D_dit84")
 
-[node name="Polygon2D" type="Polygon2D" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=1116562549]
-color = Color(1, 0, 1, 1)
-polygon = PackedVector2Array(-34, -61, 11, -62, 54, 29, -74, 32)
-uv = PackedVector2Array(-200, -31, -31, -22, -60, 55, -204, 40)
+[node name="PlayerShot" parent="ShotPath2/PathFollow2D/Shot/Area2D" unique_id=16384534 instance=ExtResource("3_kmhmm")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1204386962]
 libraries/ = SubResource("AnimationLibrary_ndfm1")

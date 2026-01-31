@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://q54xddbobam6"]
+[gd_scene format=3 uid="uid://4sn8jdic5ll6"]
 
 [ext_resource type="Texture2D" uid="uid://bc3k83gonfswb" path="res://art/spritesheets/Retro Impact Effect Pack 3 A.png" id="1_ou8g8"]
 
@@ -106,6 +106,7 @@ _data = {
 [node name="Node2D" type="Node2D" unique_id=492095604]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1991195102]
+scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_2cqfq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1912530320]

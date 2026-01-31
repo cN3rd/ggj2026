@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dfwdpb5cugm5u" path="res://art/sprites-player/hannya-pixelated.png" id="8_0odxb"]
 [ext_resource type="PackedScene" uid="uid://c24l71gh58c33" path="res://weapons/weapon3_1.tscn" id="9_yaehf"]
 [ext_resource type="PackedScene" uid="uid://x780v06384un" path="res://weapons/weapon3_2.tscn" id="10_074og"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="10_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="10_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://co7lsm6v2rxgq" path="res://weapons/weapon3_3.tscn" id="11_cegan"]
 [ext_resource type="PackedScene" uid="uid://b40yla7uncvvk" path="res://weapons/weapon3_4.tscn" id="12_82xsv"]
 [ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
@@ -3193,6 +3193,7 @@ _data = {
 [node name="Node2D" type="Node2D" unique_id=227929407]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1768144407]
+modulate = Color(1, 1, 1, 0.5176471)
 position = Vector2(-6.9999995, 1.9999999)
 scale = Vector2(0.70442706, 0.7044271)
 texture = ExtResource("12_dg77c")
