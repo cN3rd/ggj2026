@@ -2,14 +2,26 @@
 
 [ext_resource type="Script" uid="uid://dg5u4yfnmgi47" path="res://scripts/shot.gd" id="1_s7yf1"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="2_d8b4r"]
-[ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="2_opooi"]
-[ext_resource type="Shader" uid="uid://cekjb0n8x5hqg" path="res://shaders/axis_align.gdshader" id="4_1nlqm"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_w34ps"]
-shader = ExtResource("4_1nlqm")
+[ext_resource type="PackedScene" uid="uid://qblnup6xqewd" path="res://explosions/explosion_simple.tscn" id="2_opooi"]
+[ext_resource type="Texture2D" uid="uid://bc3k83gonfswb" path="res://art/spritesheets/Retro Impact Effect Pack 3 A.png" id="4_s7yf1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
 radius = 50.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w34ps"]
+atlas = ExtResource("4_s7yf1")
+region = Rect2(96, 576, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opooi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w34ps")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_1bvp3"]
 length = 0.001
@@ -24,6 +36,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Shot/AnimatedSprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 2)]
 }
 
 [sub_resource type="Animation" id="Animation_h2yge"]
@@ -72,6 +96,18 @@ tracks/2/keys = {
 "method": &"shoot"
 }]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Shot/AnimatedSprite2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.0333333),
+"transitions": PackedFloat32Array(0.25, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(2, 2)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1bvp3"]
 _data = {
@@ -90,15 +126,14 @@ shot_mode = "emit"
 shoot_after_impact = true
 damage = 7
 
-[node name="Polygon2D" type="Polygon2D" parent="Shot" unique_id=1915473033]
-material = SubResource("ShaderMaterial_w34ps")
-polygon = PackedVector2Array(-46.34851, 1.321929, -14.339403, -18.07753, 43.85897, -15.6525955, 39.009106, 4.716835, 12.819838, 21.69136)
-uv = PackedVector2Array(-85, -13, -19, -53, 101, -48, 91, -6, 37, 29)
-
 [node name="Area2D" type="Area2D" parent="Shot" unique_id=1833640360]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shot/Area2D" unique_id=513096179]
 shape = SubResource("CircleShape2D_1bvp3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shot" unique_id=1356796580]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_opooi")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948720595]
 libraries/ = SubResource("AnimationLibrary_1bvp3")
