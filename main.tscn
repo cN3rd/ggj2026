@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://xp6nsoy6xwee" path="res://art/sprites-player/onna-pixelated.png" id="5_ryguw"]
 [ext_resource type="Texture2D" uid="uid://dnov5woi2xyl7" path="res://art/sprites-player/hashihime-pixelated.png" id="6_d13ii"]
 [ext_resource type="Texture2D" uid="uid://cblpb56kk3lgf" path="res://art/sprites-player/hannya-01-pixelated.png" id="7_1u8w0"]
-[ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://dfwdpb5cugm5u" path="res://art/sprites-player/hannya-pixelated.png" id="8_0odxb"]
 [ext_resource type="PackedScene" uid="uid://c24l71gh58c33" path="res://weapons/weapon3_1.tscn" id="9_yaehf"]
@@ -23,6 +22,14 @@
 [ext_resource type="PackedScene" uid="uid://gxbw8yj71uqw" path="res://weapons/weapon5.tscn" id="17_1u8w0"]
 [ext_resource type="PackedScene" uid="uid://2qt4iqsq0tb7" path="res://patterns/post_home.tscn" id="17_074og"]
 [ext_resource type="AudioStream" uid="uid://8agbfuoqm4ks" path="res://sound/GAMEPLAY MUSIC.wav" id="19_cegan"]
+[ext_resource type="Texture2D" uid="uid://x2hthn5mifig" path="res://art/sprites-enemies/kotobite-pixelated.png" id="20_kq58d"]
+[ext_resource type="Texture2D" uid="uid://chmai6pd022ig" path="res://art/sprites-enemies/kabuki-blue-pixelated.png" id="21_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://bq0qqu5doaq6j" path="res://art/sprites-enemies/kabuki-red-pixelated.png" id="22_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cud4st37w524r" path="res://art/sprites-enemies/kabuki-fullred-pixelated.png" id="23_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://cw8oqvhnwao0i" path="res://art/sprites-enemies/kabuki-fullblue-pixelated.png" id="24_kq58d"]
+[ext_resource type="Texture2D" uid="uid://b4tsrt67ghdbo" path="res://art/sprites-enemies/kitsune-pixelated.png" id="25_seu75"]
+[ext_resource type="Texture2D" uid="uid://o0s3td04lwwq" path="res://art/sprites-enemies/shishiguchi-pixelated.png" id="26_htxhm"]
+[ext_resource type="Texture2D" uid="uid://ds8gp77giihtf" path="res://art/sprites-enemies/kappa-pixelated.png" id="28_seu75"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w48qg"]
 animations = [{
@@ -219,7 +226,7 @@ _data = {
 point_count = 6
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7mycd"]
-radius = 100.0
+radius = 70.0
 
 [sub_resource type="Curve2D" id="Curve2D_efxa6"]
 _data = {
@@ -352,6 +359,9 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 800, 960, -400, 0, 0, 0, 0, 960, 700, 0, 0, 0, 100, 960, 540, 200, 0, -400, 0, 600, 700, -800, 0, 500, 0, 960, 100, 0, -600, 0, 0, 1600, 800, 0, 0, -800, 0, 1600, 200, 0, -400, 0, 400, 320, 540, 0, 400, 0, -400, 1600, 540, 800, 0, 200, 0, 320, 200, 0, -400, 0, -400, 960, 800, -200, 0, 0, 800, 1600, 200, 0, 800, 0, 0, 320, 200, 0, 0, 0, -400, 320, 800, 0, -400, 0, 0, 960, 800, 0, 0, 0, 0, 960, 200, 0, 0, 0, 0, 960, 800, 0, 0, 0, 0, 960, -400)
 }
 point_count = 18
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jq2sk"]
+radius = 150.0
 
 [sub_resource type="Curve2D" id="Curve2D_gngh3"]
 _data = {
@@ -2920,7 +2930,7 @@ shape = SubResource("CircleShape2D_7mycd")
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave1_Enemy1/PathFollow2D/Enemy" unique_id=674440529]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("20_kq58d")
 
 [node name="Wave1_Enemy2" type="Path2D" parent="Enemies" unique_id=1736331700]
 position = Vector2(-173.1568, 37.86104)
@@ -2951,7 +2961,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave1_Enemy2/PathFollow2D/Enemy" unique_id=1420523151]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("20_kq58d")
 
 [node name="Wave2_Enemy1" type="Path2D" parent="Enemies" unique_id=1380627924]
 curve = SubResource("Curve2D_d13ii")
@@ -2981,10 +2991,9 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy1/PathFollow2D/Enemy" unique_id=284404178]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("21_a6jrf")
 
 [node name="Wave2_Enemy2" type="Path2D" parent="Enemies" unique_id=791319372]
-position = Vector2(1468.1865, 108.78134)
 curve = SubResource("Curve2D_1u8w0")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave2_Enemy2" unique_id=1883733300]
@@ -2994,7 +3003,6 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave2_Enemy2/PathFollow2D" unique_id=1054011633]
 process_mode = 4
-visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -3012,7 +3020,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy2/PathFollow2D/Enemy" unique_id=1271539134]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("22_xuqvo")
 
 [node name="Wave2_Enemy3" type="Path2D" parent="Enemies" unique_id=1264521717]
 curve = SubResource("Curve2D_0odxb")
@@ -3042,7 +3050,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy3/PathFollow2D/Enemy" unique_id=1919654623]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("23_qsp4k")
 
 [node name="Wave2_Enemy4" type="Path2D" parent="Enemies" unique_id=1587252858]
 curve = SubResource("Curve2D_lswn8")
@@ -3072,7 +3080,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy4/PathFollow2D/Enemy" unique_id=557259625]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("24_kq58d")
 
 [node name="Wave2_Enemy5" type="Path2D" parent="Enemies" unique_id=570099725]
 curve = SubResource("Curve2D_a6jrf")
@@ -3102,7 +3110,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy5/PathFollow2D/Enemy" unique_id=630102924]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("23_qsp4k")
 
 [node name="Wave2_Enemy6" type="Path2D" parent="Enemies" unique_id=1043410326]
 curve = SubResource("Curve2D_xuqvo")
@@ -3132,7 +3140,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy6/PathFollow2D/Enemy" unique_id=1803986580]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("24_kq58d")
 
 [node name="Wave2_Enemy7" type="Path2D" parent="Enemies" unique_id=1068272053]
 curve = SubResource("Curve2D_qsp4k")
@@ -3162,7 +3170,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy7/PathFollow2D/Enemy" unique_id=36947204]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("21_a6jrf")
 
 [node name="Wave2_Enemy8" type="Path2D" parent="Enemies" unique_id=1938649656]
 curve = SubResource("Curve2D_kq58d")
@@ -3192,7 +3200,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave2_Enemy8/PathFollow2D/Enemy" unique_id=1434566125]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("22_xuqvo")
 
 [node name="Wave3_Enemy1" type="Path2D" parent="Enemies" unique_id=1242892599]
 curve = SubResource("Curve2D_seu75")
@@ -3222,7 +3230,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy1/PathFollow2D/Enemy" unique_id=1793638111]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy2" type="Path2D" parent="Enemies" unique_id=452216163]
 curve = SubResource("Curve2D_htxhm")
@@ -3253,7 +3261,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy2/PathFollow2D/Enemy" unique_id=1795063379]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy3" type="Path2D" parent="Enemies" unique_id=1479263128]
 curve = SubResource("Curve2D_seu75")
@@ -3284,7 +3292,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy3/PathFollow2D/Enemy" unique_id=704331904]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy4" type="Path2D" parent="Enemies" unique_id=1567561353]
 curve = SubResource("Curve2D_jq2sk")
@@ -3315,7 +3323,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy4/PathFollow2D/Enemy" unique_id=1471277605]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy5" type="Path2D" parent="Enemies" unique_id=276041378]
 curve = SubResource("Curve2D_4k2k6")
@@ -3346,7 +3354,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy5/PathFollow2D/Enemy" unique_id=1157494967]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy6" type="Path2D" parent="Enemies" unique_id=1893014027]
 curve = SubResource("Curve2D_0rl1p")
@@ -3377,7 +3385,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy6/PathFollow2D/Enemy" unique_id=1070009709]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy7" type="Path2D" parent="Enemies" unique_id=1179035230]
 curve = SubResource("Curve2D_ok6jj")
@@ -3408,7 +3416,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy7/PathFollow2D/Enemy" unique_id=44139749]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy8" type="Path2D" parent="Enemies" unique_id=1868069611]
 curve = SubResource("Curve2D_facbu")
@@ -3439,7 +3447,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy8/PathFollow2D/Enemy" unique_id=59062474]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy9" type="Path2D" parent="Enemies" unique_id=1906320226]
 curve = SubResource("Curve2D_seu75")
@@ -3470,7 +3478,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy9/PathFollow2D/Enemy" unique_id=621638234]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy10" type="Path2D" parent="Enemies" unique_id=1218088163]
 curve = SubResource("Curve2D_b1qrp")
@@ -3501,7 +3509,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy10/PathFollow2D/Enemy" unique_id=497577352]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy11" type="Path2D" parent="Enemies" unique_id=1064167483]
 curve = SubResource("Curve2D_come4")
@@ -3532,7 +3540,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy11/PathFollow2D/Enemy" unique_id=465253786]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy12" type="Path2D" parent="Enemies" unique_id=1152398085]
 curve = SubResource("Curve2D_h8e4i")
@@ -3563,7 +3571,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy12/PathFollow2D/Enemy" unique_id=375521559]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy13" type="Path2D" parent="Enemies" unique_id=527433372]
 curve = SubResource("Curve2D_4lmeg")
@@ -3594,7 +3602,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy13/PathFollow2D/Enemy" unique_id=2010109907]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave3_Enemy14" type="Path2D" parent="Enemies" unique_id=1001173600]
 curve = SubResource("Curve2D_0cp0l")
@@ -3625,7 +3633,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy14/PathFollow2D/Enemy" unique_id=544930732]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Boss" type="Path2D" parent="Enemies" unique_id=1159686939]
 curve = SubResource("Curve2D_d2t1y")
@@ -3648,14 +3656,15 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy/Area2D" unique_id=1075688286]
-shape = SubResource("CircleShape2D_7mycd")
+shape = SubResource("CircleShape2D_jq2sk")
 
 [node name="Aim" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=1127566627]
 rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=144898455]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("26_htxhm")
 
 [node name="Wave4_EnemyPath1" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=431145496]
 
@@ -3800,7 +3809,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy1/Enemy" unique_id=976548392]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy2" type="Node2D" parent="Enemies" unique_id=1581451216]
 position = Vector2(2960, -400)
@@ -3825,7 +3834,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy2/Enemy" unique_id=35377822]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy3" type="Node2D" parent="Enemies" unique_id=2106497007]
 position = Vector2(2960, -400)
@@ -3850,7 +3859,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy3/Enemy" unique_id=794637432]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy4" type="Node2D" parent="Enemies" unique_id=1611542686]
 position = Vector2(2960, -400)
@@ -3875,7 +3884,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy4/Enemy" unique_id=548792954]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy5" type="Node2D" parent="Enemies" unique_id=70346590]
 position = Vector2(2960, -400)
@@ -3900,7 +3909,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy5/Enemy" unique_id=1530934565]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy6" type="Node2D" parent="Enemies" unique_id=826846713]
 position = Vector2(2960, -400)
@@ -3925,7 +3934,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy6/Enemy" unique_id=1934600286]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy7" type="Node2D" parent="Enemies" unique_id=1381243630]
 position = Vector2(-1040, -400)
@@ -3950,7 +3959,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy7/Enemy" unique_id=1848831679]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy8" type="Node2D" parent="Enemies" unique_id=1443049570]
 position = Vector2(-1040, -400)
@@ -3975,7 +3984,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy8/Enemy" unique_id=1226748415]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy9" type="Node2D" parent="Enemies" unique_id=994586220]
 position = Vector2(-1040, -400)
@@ -4000,7 +4009,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy9/Enemy" unique_id=193703665]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy10" type="Node2D" parent="Enemies" unique_id=1969495104]
 position = Vector2(-1040, -400)
@@ -4025,7 +4034,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy10/Enemy" unique_id=864585104]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy11" type="Node2D" parent="Enemies" unique_id=58456285]
 position = Vector2(-1040, -400)
@@ -4050,7 +4059,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy11/Enemy" unique_id=120174255]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy12" type="Node2D" parent="Enemies" unique_id=621429766]
 position = Vector2(-1040, -400)
@@ -4075,7 +4084,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Enemy12/Enemy" unique_id=1852408315]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("25_seu75")
 
 [node name="Wave5_Enemy1" type="Path2D" parent="Enemies" unique_id=1510030112]
 curve = SubResource("Curve2D_gngh3")
@@ -4087,6 +4096,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy1/PathFollow2D" unique_id=1753068582]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4104,7 +4114,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy1/PathFollow2D/Enemy" unique_id=986738443]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy2" type="Path2D" parent="Enemies" unique_id=375383832]
 curve = SubResource("Curve2D_0n3wm")
@@ -4116,6 +4126,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy2/PathFollow2D" unique_id=1762372114]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4133,7 +4144,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy2/PathFollow2D/Enemy" unique_id=1814824110]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy3" type="Path2D" parent="Enemies" unique_id=545823705]
 curve = SubResource("Curve2D_gngh3")
@@ -4145,6 +4156,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy3/PathFollow2D" unique_id=645795156]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4162,7 +4174,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy3/PathFollow2D/Enemy" unique_id=608738943]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy4" type="Path2D" parent="Enemies" unique_id=1250356513]
 curve = SubResource("Curve2D_0n3wm")
@@ -4174,6 +4186,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy4/PathFollow2D" unique_id=2002907495]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4191,7 +4204,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy4/PathFollow2D/Enemy" unique_id=1674781951]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy5" type="Path2D" parent="Enemies" unique_id=780277738]
 curve = SubResource("Curve2D_gngh3")
@@ -4203,6 +4216,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy5/PathFollow2D" unique_id=288883781]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4220,7 +4234,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy5/PathFollow2D/Enemy" unique_id=2115975744]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy6" type="Path2D" parent="Enemies" unique_id=1631386574]
 curve = SubResource("Curve2D_0n3wm")
@@ -4232,6 +4246,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy6/PathFollow2D" unique_id=1441256819]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4249,7 +4264,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy6/PathFollow2D/Enemy" unique_id=755756287]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy7" type="Path2D" parent="Enemies" unique_id=823507513]
 curve = SubResource("Curve2D_gngh3")
@@ -4261,6 +4276,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy7/PathFollow2D" unique_id=1443255276]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4278,7 +4294,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy7/PathFollow2D/Enemy" unique_id=1385950890]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="Wave5_Enemy8" type="Path2D" parent="Enemies" unique_id=2057902299]
 curve = SubResource("Curve2D_0n3wm")
@@ -4290,6 +4306,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy8/PathFollow2D" unique_id=2131890078]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 8
 explosion = ExtResource("10_ycdy4")
@@ -4307,7 +4324,7 @@ rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy8/PathFollow2D/Enemy" unique_id=123322786]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_5vw27")
+texture = ExtResource("28_seu75")
 
 [node name="shot_layer" type="Node2D" parent="." unique_id=1350823798 groups=["shot_layer"]]
 
