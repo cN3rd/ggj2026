@@ -347,6 +347,12 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="Curve2D" id="Curve2D_d2t1y"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 800, 960, -400, 0, 0, 0, 0, 960, 700, 0, 0, 0, 100, 960, 540, 200, 0, -400, 0, 600, 700, -800, 0, 500, 0, 960, 100, 0, -600, 0, 0, 1600, 800, 0, 0, -800, 0, 1600, 200, 0, -400, 0, 400, 320, 540, 0, 400, 0, -400, 1600, 540, 800, 0, 200, 0, 320, 200, 0, -400, 0, -400, 960, 800, -200, 0, 0, 800, 1600, 200, 0, 800, 0, 0, 320, 200, 0, 0, 0, -400, 320, 800, 0, -400, 0, 0, 960, 800, 0, 0, 0, 0, 960, 200, 0, 0, 0, 0, 960, 800, 0, 0, 0, 0, 960, -400)
+}
+point_count = 18
+
 [sub_resource type="Animation" id="Animation_lquwl"]
 length = 0.001
 tracks/0/type = "value"
@@ -720,6 +726,18 @@ tracks/30/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [1.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("Enemies/Wave4_Boss/PathFollow2D:progress")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_7mycd"]
@@ -1613,6 +1631,32 @@ tracks/55/keys = {
 "update": 0,
 "values": [0.0, 1.0]
 }
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("Enemies/Wave4_Boss/PathFollow2D:progress")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(39.5, 40, 41, 44, 46, 48, 50, 52, 54, 55.6, 56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1100.0, 1250.0, 4044.1453, 4644.1426, 9105.538, 11027.611, 12994.645, 14578.165, 15778.18, 16978.172]
+}
+tracks/57/type = "method"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Enemy")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(39.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"activate"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
 _data = {
@@ -2432,6 +2476,35 @@ shape = SubResource("CircleShape2D_7mycd")
 rotation = 0.61086524
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave3_Enemy14/PathFollow2D/Enemy" unique_id=544930732]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave4_Boss" type="Path2D" parent="Enemies" unique_id=1159686939]
+curve = SubResource("Curve2D_d2t1y")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave4_Boss" unique_id=1638148587]
+position = Vector2(960, -400)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1303704837]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 200
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=339149321]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy/Area2D" unique_id=1075688286]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=1127566627]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=144898455]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_5vw27")
 
