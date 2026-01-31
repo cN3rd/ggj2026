@@ -353,6 +353,18 @@ _data = {
 }
 point_count = 18
 
+[sub_resource type="Curve2D" id="Curve2D_gngh3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, -1200, 1700, 1300, 0, -1200, 0, 0, 600, 1300)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_0n3wm"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, -1200, 220, 1300, 0, -1200, 0, 0, 1320, 1300)
+}
+point_count = 2
+
 [sub_resource type="Animation" id="Animation_lquwl"]
 length = 0.001
 tracks/0/type = "value"
@@ -739,6 +751,114 @@ tracks/31/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D:progress_ratio")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D:progress_ratio")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D:progress_ratio")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D:progress_ratio")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D:progress_ratio")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D:progress_ratio")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D:progress_ratio")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D:progress_ratio")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Chat2:visible")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_7mycd"]
 resource_name = "level"
@@ -988,10 +1108,10 @@ tracks/11/path = NodePath("Player:armed")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(15, 20),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(15, 20, 66),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [false, true, false]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -1650,12 +1770,259 @@ tracks/57/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Enemy")
 tracks/57/interp = 1
 tracks/57/loop_wrap = true
 tracks/57/keys = {
-"times": PackedFloat32Array(39.5),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(39.5, 56),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
 }]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D:progress_ratio")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(56, 58),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/59/type = "method"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("Enemies/Wave5_Enemy1/PathFollow2D/Enemy")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
+"times": PackedFloat32Array(56, 58),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/60/type = "value"
+tracks/60/imported = false
+tracks/60/enabled = true
+tracks/60/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D:progress_ratio")
+tracks/60/interp = 1
+tracks/60/loop_wrap = true
+tracks/60/keys = {
+"times": PackedFloat32Array(57, 59),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/61/type = "method"
+tracks/61/imported = false
+tracks/61/enabled = true
+tracks/61/path = NodePath("Enemies/Wave5_Enemy2/PathFollow2D/Enemy")
+tracks/61/interp = 1
+tracks/61/loop_wrap = true
+tracks/61/keys = {
+"times": PackedFloat32Array(57, 59),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/62/type = "value"
+tracks/62/imported = false
+tracks/62/enabled = true
+tracks/62/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D:progress_ratio")
+tracks/62/interp = 1
+tracks/62/loop_wrap = true
+tracks/62/keys = {
+"times": PackedFloat32Array(58, 60),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/63/type = "method"
+tracks/63/imported = false
+tracks/63/enabled = true
+tracks/63/path = NodePath("Enemies/Wave5_Enemy3/PathFollow2D/Enemy")
+tracks/63/interp = 1
+tracks/63/loop_wrap = true
+tracks/63/keys = {
+"times": PackedFloat32Array(58, 60),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/64/type = "value"
+tracks/64/imported = false
+tracks/64/enabled = true
+tracks/64/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D:progress_ratio")
+tracks/64/interp = 1
+tracks/64/loop_wrap = true
+tracks/64/keys = {
+"times": PackedFloat32Array(59, 61),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/65/type = "method"
+tracks/65/imported = false
+tracks/65/enabled = true
+tracks/65/path = NodePath("Enemies/Wave5_Enemy4/PathFollow2D/Enemy")
+tracks/65/interp = 1
+tracks/65/loop_wrap = true
+tracks/65/keys = {
+"times": PackedFloat32Array(59, 61),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/66/type = "value"
+tracks/66/imported = false
+tracks/66/enabled = true
+tracks/66/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D:progress_ratio")
+tracks/66/interp = 1
+tracks/66/loop_wrap = true
+tracks/66/keys = {
+"times": PackedFloat32Array(60, 62),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/67/type = "method"
+tracks/67/imported = false
+tracks/67/enabled = true
+tracks/67/path = NodePath("Enemies/Wave5_Enemy5/PathFollow2D/Enemy")
+tracks/67/interp = 1
+tracks/67/loop_wrap = true
+tracks/67/keys = {
+"times": PackedFloat32Array(60, 62),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/68/type = "value"
+tracks/68/imported = false
+tracks/68/enabled = true
+tracks/68/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D:progress_ratio")
+tracks/68/interp = 1
+tracks/68/loop_wrap = true
+tracks/68/keys = {
+"times": PackedFloat32Array(61, 63),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/69/type = "method"
+tracks/69/imported = false
+tracks/69/enabled = true
+tracks/69/path = NodePath("Enemies/Wave5_Enemy6/PathFollow2D/Enemy")
+tracks/69/interp = 1
+tracks/69/loop_wrap = true
+tracks/69/keys = {
+"times": PackedFloat32Array(61, 63),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/70/type = "value"
+tracks/70/imported = false
+tracks/70/enabled = true
+tracks/70/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D:progress_ratio")
+tracks/70/interp = 1
+tracks/70/loop_wrap = true
+tracks/70/keys = {
+"times": PackedFloat32Array(62, 64),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/71/type = "method"
+tracks/71/imported = false
+tracks/71/enabled = true
+tracks/71/path = NodePath("Enemies/Wave5_Enemy7/PathFollow2D/Enemy")
+tracks/71/interp = 1
+tracks/71/loop_wrap = true
+tracks/71/keys = {
+"times": PackedFloat32Array(62, 64),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/72/type = "value"
+tracks/72/imported = false
+tracks/72/enabled = true
+tracks/72/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D:progress_ratio")
+tracks/72/interp = 1
+tracks/72/loop_wrap = true
+tracks/72/keys = {
+"times": PackedFloat32Array(63, 65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/73/type = "method"
+tracks/73/imported = false
+tracks/73/enabled = true
+tracks/73/path = NodePath("Enemies/Wave5_Enemy8/PathFollow2D/Enemy")
+tracks/73/interp = 1
+tracks/73/loop_wrap = true
+tracks/73/keys = {
+"times": PackedFloat32Array(63, 65),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"activate"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/74/type = "value"
+tracks/74/imported = false
+tracks/74/enabled = true
+tracks/74/path = NodePath("Chat2:visible")
+tracks/74/interp = 1
+tracks/74/loop_wrap = true
+tracks/74/keys = {
+"times": PackedFloat32Array(66),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_272bh"]
@@ -2489,6 +2856,7 @@ loop = false
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Boss/PathFollow2D" unique_id=1303704837]
 process_mode = 4
+visible = false
 script = ExtResource("4_lquwl")
 health = 200
 explosion = ExtResource("10_ycdy4")
@@ -2508,11 +2876,247 @@ rotation = 0.61086524
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_5vw27")
 
+[node name="Wave5_Enemy1" type="Path2D" parent="Enemies" unique_id=1510030112]
+curve = SubResource("Curve2D_gngh3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy1" unique_id=393492918]
+position = Vector2(1700, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy1/PathFollow2D" unique_id=1753068582]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy1/PathFollow2D/Enemy" unique_id=1304114638]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy1/PathFollow2D/Enemy/Area2D" unique_id=789632268]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy1/PathFollow2D/Enemy" unique_id=586049409]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy1/PathFollow2D/Enemy" unique_id=986738443]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy2" type="Path2D" parent="Enemies" unique_id=375383832]
+curve = SubResource("Curve2D_0n3wm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy2" unique_id=1533791248]
+position = Vector2(220, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy2/PathFollow2D" unique_id=1762372114]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy2/PathFollow2D/Enemy" unique_id=1633653731]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy2/PathFollow2D/Enemy/Area2D" unique_id=1792684627]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy2/PathFollow2D/Enemy" unique_id=150871198]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy2/PathFollow2D/Enemy" unique_id=1814824110]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy3" type="Path2D" parent="Enemies" unique_id=545823705]
+curve = SubResource("Curve2D_gngh3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy3" unique_id=1775630209]
+position = Vector2(1700, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy3/PathFollow2D" unique_id=645795156]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy3/PathFollow2D/Enemy" unique_id=2092380766]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy3/PathFollow2D/Enemy/Area2D" unique_id=409492805]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy3/PathFollow2D/Enemy" unique_id=1536671853]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy3/PathFollow2D/Enemy" unique_id=608738943]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy4" type="Path2D" parent="Enemies" unique_id=1250356513]
+curve = SubResource("Curve2D_0n3wm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy4" unique_id=1881153840]
+position = Vector2(220, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy4/PathFollow2D" unique_id=2002907495]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy4/PathFollow2D/Enemy" unique_id=977442135]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy4/PathFollow2D/Enemy/Area2D" unique_id=584203358]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy4/PathFollow2D/Enemy" unique_id=720270141]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy4/PathFollow2D/Enemy" unique_id=1674781951]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy5" type="Path2D" parent="Enemies" unique_id=780277738]
+curve = SubResource("Curve2D_gngh3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy5" unique_id=835538767]
+position = Vector2(1700, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy5/PathFollow2D" unique_id=288883781]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy5/PathFollow2D/Enemy" unique_id=1617912165]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy5/PathFollow2D/Enemy/Area2D" unique_id=2136429854]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy5/PathFollow2D/Enemy" unique_id=983395220]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy5/PathFollow2D/Enemy" unique_id=2115975744]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy6" type="Path2D" parent="Enemies" unique_id=1631386574]
+curve = SubResource("Curve2D_0n3wm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy6" unique_id=490533507]
+position = Vector2(220, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy6/PathFollow2D" unique_id=1441256819]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy6/PathFollow2D/Enemy" unique_id=400899446]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy6/PathFollow2D/Enemy/Area2D" unique_id=1815067905]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy6/PathFollow2D/Enemy" unique_id=374106999]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy6/PathFollow2D/Enemy" unique_id=755756287]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy7" type="Path2D" parent="Enemies" unique_id=823507513]
+curve = SubResource("Curve2D_gngh3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy7" unique_id=877298258]
+position = Vector2(1700, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy7/PathFollow2D" unique_id=1443255276]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy7/PathFollow2D/Enemy" unique_id=1575871103]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy7/PathFollow2D/Enemy/Area2D" unique_id=1008659783]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy7/PathFollow2D/Enemy" unique_id=1479474888]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy7/PathFollow2D/Enemy" unique_id=1385950890]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
+[node name="Wave5_Enemy8" type="Path2D" parent="Enemies" unique_id=2057902299]
+curve = SubResource("Curve2D_0n3wm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Wave5_Enemy8" unique_id=1385687538]
+position = Vector2(220, 1300)
+rotates = false
+loop = false
+
+[node name="Enemy" type="Node2D" parent="Enemies/Wave5_Enemy8/PathFollow2D" unique_id=2131890078]
+process_mode = 4
+script = ExtResource("4_lquwl")
+health = 8
+explosion = ExtResource("10_ycdy4")
+shot = ExtResource("3_h2yge")
+
+[node name="Area2D" type="Area2D" parent="Enemies/Wave5_Enemy8/PathFollow2D/Enemy" unique_id=162557090]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Wave5_Enemy8/PathFollow2D/Enemy/Area2D" unique_id=136814570]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Aim" type="Node2D" parent="Enemies/Wave5_Enemy8/PathFollow2D/Enemy" unique_id=1341329592]
+rotation = 0.61086524
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemies/Wave5_Enemy8/PathFollow2D/Enemy" unique_id=123322786]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_5vw27")
+
 [node name="shot_layer" type="Node2D" parent="." unique_id=1350823798 groups=["shot_layer"]]
 
 [node name="explosion_layer" type="Node2D" parent="." unique_id=1806628524 groups=["explosion_layer"]]
 
 [node name="Chat1" type="Polygon2D" parent="." unique_id=1725810532]
+visible = false
+polygon = PackedVector2Array(184, 829, 1693, 837, 1688, 1031, 192, 1037)
+
+[node name="Chat2" type="Polygon2D" parent="." unique_id=572852004]
 visible = false
 polygon = PackedVector2Array(184, 829, 1693, 837, 1688, 1031, 192, 1037)
 
