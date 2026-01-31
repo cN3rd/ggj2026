@@ -2930,7 +2930,7 @@ tracks/101/path = NodePath("Enemies/Wave4_Boss/PathFollow2D:progress")
 tracks/101/interp = 1
 tracks/101/loop_wrap = true
 tracks/101/keys = {
-"times": PackedFloat32Array(39.5, 40, 41, 44, 46, 48, 50, 52, 54, 55.6, 56),
+"times": PackedFloat32Array(39.5, 40, 41, 44, 46, 48, 50, 52, 54, 55.5, 56),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 1100.0, 1250.0, 4044.1453, 4644.1426, 9105.538, 11027.611, 12994.645, 14578.165, 15778.18, 16978.172]
@@ -2942,11 +2942,107 @@ tracks/102/path = NodePath("Enemies/Wave4_Boss/PathFollow2D/Enemy")
 tracks/102/interp = 1
 tracks/102/loop_wrap = true
 tracks/102/keys = {
-"times": PackedFloat32Array(39.5, 56),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(39.5, 40, 40.5, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46, 46.5, 47, 47.5, 48, 48.5, 49, 49.5, 50, 50.5, 51, 51.5, 52, 52.5, 53, 53.5, 54, 54.5, 55, 55.5, 56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "values": [{
 "args": [],
 "method": &"activate"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
+}, {
+"args": [],
+"method": &"shoot"
 }, {
 "args": [],
 "method": &"queue_free"
@@ -3999,9 +4095,9 @@ loop = false
 process_mode = 4
 visible = false
 script = ExtResource("4_lquwl")
-health = 200
+health = 20
 explosion = ExtResource("10_ycdy4")
-shot = ExtResource("3_h2yge")
+shot = ExtResource("7_272bh")
 
 [node name="Area2D" type="Area2D" parent="Enemies/Wave4_Boss/PathFollow2D/Enemy" unique_id=339149321]
 collision_layer = 2
@@ -4136,7 +4232,7 @@ update_rotation = false
 update_scale = false
 
 [node name="Wave4_Enemy1" type="Node2D" parent="Enemies" unique_id=613152098]
-position = Vector2(674.6831, 332.29373)
+position = Vector2(960.00134, 499.9995)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy1" unique_id=650906956]
 process_mode = 4
@@ -4158,7 +4254,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy2" type="Node2D" parent="Enemies" unique_id=1581451216]
-position = Vector2(737.0561, 625.73755)
+position = Vector2(700.1928, 649.9988)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy2" unique_id=648783578]
 process_mode = 4
@@ -4180,7 +4276,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy3" type="Node2D" parent="Enemies" unique_id=2106497007]
-position = Vector2(1022.3733, 718.44324)
+position = Vector2(700.19165, 949.9982)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy3" unique_id=434023239]
 process_mode = 4
@@ -4202,7 +4298,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy4" type="Node2D" parent="Enemies" unique_id=1611542686]
-position = Vector2(1245.317, 517.70374)
+position = Vector2(959.999, 1099.9995)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy4" unique_id=1650340025]
 process_mode = 4
@@ -4224,7 +4320,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy5" type="Node2D" parent="Enemies" unique_id=70346590]
-position = Vector2(1182.9436, 224.25996)
+position = Vector2(1219.8069, 950.0009)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy5" unique_id=1116851510]
 process_mode = 4
@@ -4246,7 +4342,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy6" type="Node2D" parent="Enemies" unique_id=826846713]
-position = Vector2(897.62634, 131.55466)
+position = Vector2(1219.8081, 650.0005)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy6" unique_id=688007785]
 process_mode = 4
@@ -4268,7 +4364,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy7" type="Node2D" parent="Enemies" unique_id=1381243630]
-position = Vector2(1155.6296, 466.581)
+position = Vector2(1059.9996, 626.79425)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy7" unique_id=564080962]
 process_mode = 4
@@ -4290,7 +4386,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy8" type="Node2D" parent="Enemies" unique_id=1443049570]
-position = Vector2(1021.80334, 615.2102)
+position = Vector2(1160, 799.9987)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy8" unique_id=1956948417]
 process_mode = 4
@@ -4312,7 +4408,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy9" type="Node2D" parent="Enemies" unique_id=994586220]
-position = Vector2(826.17413, 573.6281)
+position = Vector2(1060.0004, 973.20435)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy9" unique_id=1790499797]
 process_mode = 4
@@ -4334,7 +4430,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy10" type="Node2D" parent="Enemies" unique_id=1969495104]
-position = Vector2(764.3705, 383.41656)
+position = Vector2(860.00073, 973.205)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy10" unique_id=543064227]
 process_mode = 4
@@ -4356,7 +4452,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy11" type="Node2D" parent="Enemies" unique_id=58456285]
-position = Vector2(898.19617, 234.78773)
+position = Vector2(760, 800.00006)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy11" unique_id=2049469398]
 process_mode = 4
@@ -4378,7 +4474,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("25_seu75")
 
 [node name="Wave4_Enemy12" type="Node2D" parent="Enemies" unique_id=621429766]
-position = Vector2(1093.826, 276.36987)
+position = Vector2(859.9998, 626.79456)
 
 [node name="Enemy" type="Node2D" parent="Enemies/Wave4_Enemy12" unique_id=565816046]
 process_mode = 4
