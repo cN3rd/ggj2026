@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cov6162x2erkx" path="res://scripts/emitter.gd" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bfwuy58ie633m" path="res://weapons/weapon1.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://biuja7qx0t6q0" path="res://patterns/scrolling_shot.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon3.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bdkj4mglwnaf0" path="res://weapons/weapon2.tscn" id="4_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bj7ovu2e4joux" path="res://art/sprites-player/koomote-pixelated.png" id="4_getpj"]
 [ext_resource type="Script" uid="uid://6gbkaeb8b0fs" path="res://scripts/enemy.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://xp6nsoy6xwee" path="res://art/sprites-player/onna-pixelated.png" id="5_ryguw"]
@@ -13,12 +13,14 @@
 [ext_resource type="Texture2D" uid="uid://bmp6mykep0nyb" path="res://art/sliced_40.png" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfdugsd3hs51b" path="res://patterns/shah.tscn" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://dfwdpb5cugm5u" path="res://art/sprites-player/hannya-pixelated.png" id="8_0odxb"]
-[ext_resource type="PackedScene" uid="uid://c24l71gh58c33" path="res://weapons/weapon2_1.tscn" id="9_yaehf"]
-[ext_resource type="PackedScene" uid="uid://x780v06384un" path="res://weapons/weapon2_2.tscn" id="10_074og"]
+[ext_resource type="PackedScene" uid="uid://c24l71gh58c33" path="res://weapons/weapon3_1.tscn" id="9_yaehf"]
+[ext_resource type="PackedScene" uid="uid://x780v06384un" path="res://weapons/weapon3_2.tscn" id="10_074og"]
 [ext_resource type="PackedScene" uid="uid://dokiwdrhm4ptx" path="res://explosions/explosion_simple.tscn" id="10_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://co7lsm6v2rxgq" path="res://weapons/weapon2_3.tscn" id="11_cegan"]
-[ext_resource type="PackedScene" uid="uid://b40yla7uncvvk" path="res://weapons/weapon2_4.tscn" id="12_82xsv"]
+[ext_resource type="PackedScene" uid="uid://co7lsm6v2rxgq" path="res://weapons/weapon3_3.tscn" id="11_cegan"]
+[ext_resource type="PackedScene" uid="uid://b40yla7uncvvk" path="res://weapons/weapon3_4.tscn" id="12_82xsv"]
 [ext_resource type="Texture2D" uid="uid://b0ddy7rika28f" path="res://art/backgrounds/Gemini_Generated_Image_hwzh7lhwzh7lhwzh.png" id="12_dg77c"]
+[ext_resource type="PackedScene" uid="uid://db6oms5y1q174" path="res://weapons/weapon4.tscn" id="16_d13ii"]
+[ext_resource type="PackedScene" uid="uid://gxbw8yj71uqw" path="res://weapons/weapon5.tscn" id="17_1u8w0"]
 [ext_resource type="PackedScene" uid="uid://2qt4iqsq0tb7" path="res://patterns/post_home.tscn" id="17_074og"]
 [ext_resource type="AudioStream" uid="uid://8agbfuoqm4ks" path="res://sound/GAMEPLAY MUSIC.wav" id="19_cegan"]
 
@@ -70,6 +72,30 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w48qg"]
 _data = {
 &"shoot": SubResource("Animation_ycdy4")
+}
+
+[sub_resource type="Animation" id="Animation_d13ii"]
+resource_name = "shoot_2"
+length = 0.45
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShotEmitter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d13ii"]
+_data = {
+&"shoot": SubResource("Animation_d13ii")
 }
 
 [sub_resource type="Animation" id="Animation_w48qg"]
@@ -145,7 +171,7 @@ loop_mode = 1
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("./ShotEmitter")
+tracks/0/path = NodePath("ShotEmitter")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -160,6 +186,30 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yaehf"]
 _data = {
 &"shoot": SubResource("Animation_2cqfq")
+}
+
+[sub_resource type="Animation" id="Animation_1u8w0"]
+resource_name = "shoot_2"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShotEmitter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"do_emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1u8w0"]
+_data = {
+&"shoot": SubResource("Animation_1u8w0")
 }
 
 [sub_resource type="Curve2D" id="Curve2D_7mycd"]
@@ -579,35 +629,53 @@ shot = ExtResource("3_1bvp3")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon1" unique_id=461525987 groups=["weapon"]]
 libraries/ = SubResource("AnimationLibrary_w48qg")
 
-[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=941410251]
+[node name="Weapon2" type="Node2D" parent="Player/Weapons" unique_id=88893976]
 
-[node name="ShotEmitter1" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=1473051817]
-script = ExtResource("2_0xm2m")
-shot = ExtResource("9_yaehf")
-
-[node name="ShotEmitter2" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=40657563]
-script = ExtResource("2_0xm2m")
-shot = ExtResource("10_074og")
-
-[node name="ShotEmitter3" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=4117253]
-script = ExtResource("2_0xm2m")
-shot = ExtResource("11_cegan")
-
-[node name="ShotEmitter4" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=150621315]
-script = ExtResource("2_0xm2m")
-shot = ExtResource("12_82xsv")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon2" unique_id=1056186989 groups=["weapon"]]
-libraries/ = SubResource("AnimationLibrary_vivmo")
-
-[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=611492356]
-
-[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=1719528107]
+[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon2" unique_id=1382402882]
 script = ExtResource("2_0xm2m")
 shot = ExtResource("4_7mycd")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon3" unique_id=1530260296 groups=["weapon"]]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon2" unique_id=1395266836 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_d13ii")
+
+[node name="Weapon3" type="Node2D" parent="Player/Weapons" unique_id=941410251]
+
+[node name="ShotEmitter1" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=1473051817]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("9_yaehf")
+
+[node name="ShotEmitter2" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=40657563]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("10_074og")
+
+[node name="ShotEmitter3" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=4117253]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("11_cegan")
+
+[node name="ShotEmitter4" type="Node2D" parent="Player/Weapons/Weapon3" unique_id=150621315]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("12_82xsv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon3" unique_id=1056186989 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_vivmo")
+
+[node name="Weapon4" type="Node2D" parent="Player/Weapons" unique_id=611492356]
+
+[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon4" unique_id=1719528107]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("16_d13ii")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon4" unique_id=1530260296 groups=["weapon"]]
 libraries/ = SubResource("AnimationLibrary_yaehf")
+
+[node name="Weapon5" type="Node2D" parent="Player/Weapons" unique_id=2059804402]
+
+[node name="ShotEmitter" type="Node2D" parent="Player/Weapons/Weapon5" unique_id=1489044795]
+script = ExtResource("2_0xm2m")
+shot = ExtResource("17_1u8w0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Weapons/Weapon5" unique_id=1965999211 groups=["weapon"]]
+libraries/ = SubResource("AnimationLibrary_1u8w0")
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1249862425]
 position = Vector2(-173.1568, 37.86104)

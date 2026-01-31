@@ -416,52 +416,52 @@ _data = {
 [node name="shah" type="Node2D" unique_id=1341587783]
 
 [node name="Shot1" parent="." unique_id=143353712 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot2" parent="." unique_id=1865683962 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot3" parent="." unique_id=200726555 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot4" parent="." unique_id=1789950290 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot5" parent="." unique_id=527881959 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot6" parent="." unique_id=2009524723 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot7" parent="." unique_id=197299849 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot8" parent="." unique_id=1021864400 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot9" parent="." unique_id=1896229893 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot10" parent="." unique_id=639256708 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot11" parent="." unique_id=649501319 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot12" parent="." unique_id=1151782967 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot13" parent="." unique_id=540082745 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot14" parent="." unique_id=928526633 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot15" parent="." unique_id=467400403 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="Shot16" parent="." unique_id=379713936 instance=ExtResource("1_enm0j")]
-damage = 20
+damage = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948720595]
 libraries/ = SubResource("AnimationLibrary_1bvp3")
