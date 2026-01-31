@@ -5,7 +5,7 @@ extends Node2D
 @export var explosion: PackedScene = null
 @export var shot: PackedScene
 @export var homing: bool = false
-@onready var aim: Node2D = $Aim
+@export var aim_at: Node2D
 
 
 var killed : bool = false
@@ -26,8 +26,8 @@ func shoot() -> void:
 	if homing:
 		var player := get_tree().get_first_node_in_group('player') as Node2D
 		shotInstance.rotation = global_position.angle_to_point(player.global_position) - PI*0.5
-	else:
-		shotInstance.rotation = aim.rotation
+	elif aim_at != null:
+		shotInstance.rotation = global_position.angle_to_point(aim_at.global_position) - PI*0.5
 	shot_layer.add_child(shotInstance)
 
 func activate() -> void:
